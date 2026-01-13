@@ -9,9 +9,9 @@ function displayCommunities(dataToDisplay) {
     // code for the no. of results shown
     const countElement = document.getElementById('resultsCount');
     countElement.innerText = `Showing ${dataToDisplay.length} resources!`;
-    
+
     // code to display the resource cards
-    listContainer.innerHTML = ""; 
+    listContainer.innerHTML = "";
     dataToDisplay.forEach(item => {
         const card = document.createElement('div');
         card.className = 'community-card';
@@ -24,7 +24,7 @@ function displayCommunities(dataToDisplay) {
             <p><b>⭐Rating: </b> ${item.rating} (For demonstration only) </p>
             <p><b>🌐Website: </b> <a href="${item.website}" target="_blank">Visit Site</a></p>
         `;
-        listContainer.appendChild(card); 
+        listContainer.appendChild(card);
     });
 }
 
@@ -35,8 +35,8 @@ filterButtons.forEach(button => {
 
         if (selectedCategory === "all") {
             currentData = communities;
-        } 
-        
+        }
+
         else {
             currentData = communities.filter(item => item.category === selectedCategory);
         }
@@ -49,8 +49,8 @@ displayCommunities(communities);
 
 //-------------alphabetical (A-Z) filter-------------\\
 const sortAlphaLink = document.getElementById('sortAlpha');
-if (sortAlphaLink){
-    sortAlphaLink.onclick = function(e) {
+if (sortAlphaLink) {
+    sortAlphaLink.onclick = function (e) {
         //prevents the page from refresing so js can do the work w/o refresing
         e.preventDefault();
 
@@ -65,8 +65,8 @@ if (sortAlphaLink){
 
 //-------------alphabetical (Z-A) filter-------------\\
 const sortZtoALink = document.getElementById('sortZtoA');
-if (sortZtoALink){
-    sortZtoALink.onclick = function(e) {
+if (sortZtoALink) {
+    sortZtoALink.onclick = function (e) {
         //prevents the page from refresing so js can do the work w/o refresing
         e.preventDefault();
 
@@ -92,14 +92,14 @@ function hideDisclaimer() {
 
 //-------------rating (high-low) filter-------------\\
 const ratingHightoLowLink = document.getElementById('ratingHightoLow');
-if (ratingHightoLowLink){
-    ratingHightoLowLink.onclick = function(e) {
+if (ratingHightoLowLink) {
+    ratingHightoLowLink.onclick = function (e) {
         //prevents the page from refresing so js can do the work w/o refresing
         e.preventDefault();
 
         //shows disclaimer
         showDisclaimer();
-        
+
         //sorts the data from high to low rating
         currentData.sort((a, b) => b.rating - a.rating);
         displayCommunities(currentData);
@@ -108,8 +108,8 @@ if (ratingHightoLowLink){
 
 //-------------rating (low-high) filter-------------\\
 const ratingLowtoHighLink = document.getElementById('ratingLowtoHigh');
-if (ratingLowtoHighLink){
-    ratingLowtoHighLink.onclick = function(e) {
+if (ratingLowtoHighLink) {
+    ratingLowtoHighLink.onclick = function (e) {
         //prevents the page from refresing so js can do the work w/o refresing
         e.preventDefault();
 
@@ -128,7 +128,7 @@ const searchInput = document.getElementById('searchInput');
 searchInput.addEventListener('input', (e) => {
     // gets the text inputted from the search
     const searchTerm = e.target.value.toLowerCase(); //.toLowerCase ensures the input is not case sensitive
-    
+
     //filters data to the show results related to input
     const filteredResults = currentData.filter(item => {
         return item.name.toLowerCase().includes(searchTerm);

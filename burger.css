@@ -1,5 +1,5 @@
  .burger-menu{
-  background: white;
+  background: #cae1ff;
   font-family: "Alice", serif;
   box-sizing: border-box;
   margin: 0;
@@ -11,7 +11,7 @@
   margin-left: 0px;
   margin-top: 36px;
   padding-right: 10px;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
   pointer-events: none;
   color: black;
@@ -19,10 +19,11 @@
 }
 
 .menu {
+  padding: 15px 15px 15px 15px;
   box-sizing: border-box;
   text-align: center;
   background: #cae1ff;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 600px;
@@ -33,7 +34,7 @@
   z-index: 1014;
   justify-content: flex-end;
   transition: transform 0.5s ease;
-  transform: translateX(-260px)
+  transform: translateX(-260px);
 }
 
 
@@ -42,14 +43,14 @@
   font-size: 14px;
 
 }
-ul {
+.menu ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   
 }
 
-ul li a {
+.menu ul li a {
   text-decoration: none;
   color: black;
   padding: 10px 20px;
@@ -65,19 +66,18 @@ ul li a {
   
 }
 
-ul li a:hover {
+.menu ul li a:hover {
   background-color: rgba(0, 0, 0, 0.3)
 }
 
 .button {
--webkit-appearance: none;
 display: none;
 visibility: hidden;
 
 }
 
 .burger {
-  position: absolute;
+  position: fixed;
   top: 0;
   height: 40px;
   width: 40px;
@@ -137,4 +137,18 @@ visibility: hidden;
 }
 .button:checked ~ .menu {
   transform: translateX(0)
+}
+
+main ul {
+  list-style-type: disc;
+  margin: 20px auto;
+  padding-left: 60px;
+  max-width: 800px;
+  text-align: left;
+}
+
+main ul li {
+  margin: 12px 0;
+  line-height: 1.6;
+  font-size: 18px;
 }

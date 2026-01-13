@@ -1,15 +1,15 @@
 /*-------------------footer-------------------*/
 footer {
-    background: #cae1ff; 
+    background: #cae1ff;
     padding: 50px 70px;
     display: flex;
-    flex-direction: row; 
-    justify-content: space-between; 
-    align-items: flex-start;        
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .footer-column {
-    flex: 1;       
+    flex: 1;
     max-width: 30%;
     color: #004aad;
     font-family: "Alice", serif;

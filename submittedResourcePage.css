@@ -1,10 +1,10 @@
 /* -------------------general style------------------- */
 
-body{
+body {
     background-color: #efeded;
 }
 
-h1{
+h1 {
     font-family: "Alice", serif;
     font-weight: 400;
     font-style: normal;
@@ -14,7 +14,8 @@ h1{
     margin: 30px;
 }
 
-h2, h3{
+h2,
+h3 {
     font-family: "Alice", serif;
     font-weight: 400;
     font-style: normal;
@@ -24,12 +25,12 @@ h2, h3{
     font-size: 15px;
 }
 
-div{
+div {
     justify-content: center;
 }
 
 /* -------------------button style------------------- */
-button{
+button {
     display: block;
     width: 10%;
     background-color: #004aad;
@@ -47,8 +48,8 @@ button{
     text-align: center;
 }
 
-button:hover{
+button:hover {
     background-color: #ffffff;
     color: #004aad;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
 }
