@@ -1,0 +1,86 @@
+body {
+  background-color: #efeded;
+}
+body,h2 {
+  color: rgb(0, 71, 171);
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   padding: 0px;
+   margin: 0px;
+   font-family: "Alice", serif;
+   text-align: center;
+   width: 100%;
+}
+
+.box {
+  width: fit-content;
+  padding: 50px, 40px, 100px, 0px;
+  margin-top: 50px;
+  position: relative;
+}
+
+.reference-title {
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+  width: 100%
+}
+
+.small-title {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 100px;
+  font-size: 30px;
+  border-bottom: solid 3px black;
+  padding: 15px 30px 15px 15px;
+  
+}
+
+.sources {
+  margin-bottom: 30px;
+  flex-wrap: wrap;  
+}
+
+
+
+#imagesource-title {
+  margin-bottom: 50px;
+}
+
+.image-info {
+  width: 100%;
+
+}
+
+.community-info {
+  width: 100%;
+
+
+}
+
+#community-title {
+  margin-top: 75px;
+}
+
+#form-title {
+  margin-bottom: 30px;
+  margin-top: 20px;
+
+
+}
+
+.checklist {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.6
+}
