@@ -1,5 +1,5 @@
  .burger-menu{
-  background: #cae1ff;
+  background-color:  #cae1ff;
   font-family: "Alice", serif;
   box-sizing: border-box;
   margin: 0;
@@ -8,22 +8,31 @@
  
 }
 .nav-title{
-  margin-left: 0px;
-  margin-top: 36px;
+  margin-left: 23px;
+  margin-top: 25px;
+  margin-right: 20px;
+  padding-bottom: 10px;
   padding-right: 10px;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
   pointer-events: none;
-  color: black;
+  color: rgb(0, 71, 171);
+  background-color:  #cae1ff;
 
 }
 
 .menu {
-  padding: 15px 15px 15px 15px;
   box-sizing: border-box;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   background: #cae1ff;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   height: 600px;
@@ -34,50 +43,59 @@
   z-index: 1014;
   justify-content: flex-end;
   transition: transform 0.5s ease;
-  transform: translateX(-260px);
+  transform: translateX(-260px)
 }
 
 
 .item {
   width: fit-content;
   font-size: 14px;
-
+  background-color:  #cae1ff;
 }
-.menu ul {
+
+ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0px;
+  margin-right: 12px;
+  background-color:  #cae1ff;
   
 }
 
-.menu ul li a {
+ul li a {
   text-decoration: none;
-  color: black;
+  background-color:  #cae1ff;
+  color: rgb(0, 71, 171);
   padding: 10px 20px;
   border: solid black;
-  display: block;
+  display: flex;
   border-width: 1px;
   border-radius: 150px;
   width: fit-content;
   border-spacing: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   transition: 0.2s ease-out;
+  justify-content: center;
+  align-items: center;
 
-  
 }
 
-.menu ul li a:hover {
-  background-color: rgba(0, 0, 0, 0.3)
+ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px 25px;
+ 
 }
 
 .button {
+-webkit-appearance: none;
 display: none;
 visibility: hidden;
 
 }
 
 .burger {
-  position: fixed;
+  position: absolute;
+  margin-left: 4px;
   top: 0;
   height: 40px;
   width: 40px;
@@ -91,7 +109,7 @@ visibility: hidden;
   position: absolute;
   height: 5px;
   width: 28px;
-  background-color: black;
+  background-color: rgb(0, 71, 171);
   border-radius: 150px;
   transition: 0.3s;
 }
@@ -137,18 +155,4 @@ visibility: hidden;
 }
 .button:checked ~ .menu {
   transform: translateX(0)
-}
-
-main ul {
-  list-style-type: disc;
-  margin: 20px auto;
-  padding-left: 60px;
-  max-width: 800px;
-  text-align: left;
-}
-
-main ul li {
-  margin: 12px 0;
-  line-height: 1.6;
-  font-size: 18px;
 }
