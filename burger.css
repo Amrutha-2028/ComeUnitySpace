@@ -10,6 +10,7 @@
 .nav-title{
   margin-left: 23px;
   margin-top: 25px;
+  flex-wrap: wrap;
   margin-right: 20px;
   padding-bottom: 10px;
   padding-right: 10px;
@@ -77,7 +78,7 @@ ul li a {
   transition: 0.2s ease-out;
   justify-content: center;
   align-items: center;
- margin-left: 10px;
+ 
 
 }
 
