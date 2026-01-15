@@ -5,6 +5,7 @@ h1 {
 
 body { 
     text-decoration: none;
+    
 }
 
 p,
@@ -44,15 +45,16 @@ a {
     padding: 40px 20px;
 }
 
-ul  {
+main ul  {
     list-style-type: disc;
     max-width: 800px;
     margin: 20px auto;
     padding-left: 60px;
     text-align: left;
+    background: none;
 }
 
-ul li {
+main ul li {
     margin: 12px 0;
     font-family: "Alice", serif;
     line-height: 1.6;
