@@ -50,7 +50,7 @@ ul  {
     margin: 20px auto;
     padding-left: 60px;
     text-align: left;
-    background: #cae1ff;
+    background-color: #cae1ff;
 }
 
 ul li a {
@@ -58,7 +58,7 @@ ul li a {
     font-family: "Alice", serif;
     line-height: 1.6;
     font-size: 18px;
-    background: #cae1ff;
+    background-color: #cae1ff;
 }
 
 .footer {
