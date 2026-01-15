@@ -40,11 +40,11 @@
   border-radius: 0px 0px 20px 0px;
   border-right: solid  3px black;
   border-bottom: solid  3px black;
-  width: 250px;
+  width: 350px;
   z-index: 1014;
   justify-content: flex-end;
   transition: transform 0.5s ease;
-  transform: translateX(-260px)
+  transform: translateX(-400px)
 }
 
 
