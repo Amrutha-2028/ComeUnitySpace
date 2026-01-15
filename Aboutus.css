@@ -68,3 +68,28 @@ ul li {
 .footer p {
     text-align: left;
 }
+
+ul li a{
+    text-decoration: none;
+    background:cae1ff;
+    color: rgb(0,71,171);
+    padding: 10px 20px;
+    border:solid black;
+    display:flex;
+    border-width:1px;
+    border-radius:150px;
+    width:fit-content;
+    margin-bottom:10px;
+    border-spacing:10px;
+    transition: 0.2s ease-out;
+    justify-content: center;
+    align-items: center;
+ 
+
+}
+
+ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px 25px;
+ 
+    
