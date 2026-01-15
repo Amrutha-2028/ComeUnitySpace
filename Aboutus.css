@@ -3,6 +3,10 @@ h1 {
     font-size: 45px;
 }
 
+body { 
+    text-decoration: none;
+}
+
 p,
 h4,
 h2 {
