@@ -44,7 +44,7 @@ a {
     padding: 40px 20px;
 }
 
-ul {
+.about ul li a {
     list-style-type: disc;
     max-width: 800px;
     margin: 20px auto;
@@ -53,7 +53,7 @@ ul {
     background: #cae1ff;
 }
 
-ul li {
+.about ul li a {
     margin: 12px 0;
     font-family: "Alice", serif;
     line-height: 1.6;
