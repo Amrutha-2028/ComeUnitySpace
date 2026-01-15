@@ -44,7 +44,7 @@ a {
     padding: 40px 20px;
 }
 
-ul {
+.vihan-list {
     list-style-type: disc;
     max-width: 800px;
     margin: 20px auto;
@@ -52,7 +52,7 @@ ul {
     text-align: left;
 }
 
-ul li {
+.vihan-list li {
     margin: 12px 0;
     font-family: "Alice", serif;
     line-height: 1.6;
