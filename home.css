@@ -13,7 +13,6 @@ p,
 h4,
 h2 {
     text-align: center;
-    font-family: 'Inter', sans-serif;
 }
 
 a {
@@ -33,14 +32,15 @@ a {
 .hero {
     text-align: center;
     padding: 120px 20px;
-    background: url("community-picture.jpg") no-repeat center center fixed;
+    background: url("community-picture.jpg") no-repeat center center; 
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     height: 80vh;
-    color: rgb(0, 0, 0);
+    color: rgba(0, 0, 0);
+    overflow: hidden;
 }
 
 .hero h1 {
@@ -61,7 +61,6 @@ a {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.65);
-    /* adjust darkness here */
     z-index: 1;
 }
 
@@ -133,13 +132,17 @@ a {
     justify-content: center;
 }
 
+.about-button a {
+    font-weight: 10px;
+    text-align: center;
+}
+
 .about-btn {
     padding: 60px 40px;
     background: #cae1ff;
     color: black;
     text-decoration: none;
     border-radius: 10px;
-    font-family: 'Inter', sans-serif;
     font-size: 1.2rem;
     font-weight: 600;
     transition: 0.3s ease;
@@ -163,7 +166,6 @@ a {
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
-    font-family: 'Inter', sans-serif;
     text-align: center;
 }
 
@@ -198,10 +200,10 @@ a {
 
 .spotlight-track {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     overflow-x: auto;
     scroll-behavior: smooth;
-    padding: 20px 0;
+    padding: 20px 20px;;
 }
 
 .spotlight-track::-webkit-scrollbar {
@@ -209,20 +211,61 @@ a {
 }
 
 .spotlight-card {
-    min-width: 280px;
-    background: #cae1ff;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    min-width: 380px;
+    height: 300px;
+    perspective: 1000px; 
+    background: transparent;
     flex-shrink: 0;
-    text-align: left;
-    transition: transform 0.3s ease;
+    margin-right: 10px;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.spotlight-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 12px;
     border: 2px solid white;
+    overflow: hidden; 
+}
+
+.card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-back {
+    background: #cae1ff;
+    color: black;
+    transform: rotateY(180deg); 
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: top;
+    padding: 20px; 
+    text-align: center;
+    overflow-y: auto; 
 }
 
 .spotlight-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+    box-shadow: 0 8px 16px 0 rgba(251, 255, 0, 0.6);
 }
 
 .left-btn,
@@ -262,7 +305,6 @@ a {
     padding: 20px 300px;
     background: #cae1ff;
     color: black;
-    font-family: 'Inter', sans-serif;
     font-size: 1.2rem;
     font-weight: 600;
     transition: 0.3s ease;
@@ -270,6 +312,7 @@ a {
     border-radius: 30px;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 
@@ -280,11 +323,36 @@ a {
 /* Statistics Section CSS*/
 .statistics {
     text-align: center;
+    background: url("community-impact.avif") no-repeat center center; 
+    background-size: cover; /* Changed to cover for better fit */
+    padding-top: 30px;
+    padding-bottom: 60px;
+    color: white; /* Make text white to see it over the dark overlay */
+    position: relative; /* <--- THIS IS THE KEY */
+    overflow: hidden;
+}
+
+.statistics::before {
+    content: "";
+    position: absolute; /* Clings to .statistics because it's relative */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65); /* Dark overlay */
+    z-index: 1;
+}
+
+/* Ensure all content inside statistics stays above the overlay */
+.statistics * {
+    position: relative;
+    z-index: 2;
 }
 
 .statistics h1 {
     font-size: 2.5rem;
     margin-bottom: 40px;
+    color: white;
 }
 
 .statistics-grid {
@@ -300,6 +368,7 @@ a {
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    color: black;
 }
 
 .statistics-number {
