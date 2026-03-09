@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="event-subpage.css">
+    <link rel="icon" type="image/x-icon" href="../resourceHubLogo.ico.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Happy+Monkey&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <title>Halloween</title>
+
+    <style>
+        :root {
+            --accent:      #c45f1a;
+            --accent-soft: #f5d9b8;
+        }
+        .hero {
+            background-image: url('https://i.guim.co.uk/img/media/7e9a77ccf74ce14278bc8354fc243141adea813d/0_119_5600_3360/master/5600.jpg?width=620&dpr=1&s=none&crop=none');
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <div class="hero">
+        <div class="hero-content">
+            <span class="hero-tag">Annual Event</span>
+            <h1 class="hero-title">Halloween 🎃</h1>
+        </div>
+    </div>
+
+    <!-- META BAR -->
+    <div class="meta-bar">
+        <div class="meta-item">
+            <span class="meta-label">📅 When</span>
+            <span class="meta-value">October 31st</span>
+        </div>
+        <div class="meta-item">
+            <span class="meta-label">🕙 Time</span>
+            <span class="meta-value">4:00 PM – 6:00 PM</span>
+        </div>
+        <div class="meta-item">
+            <span class="meta-label">📍 Where</span>
+            <span class="meta-value">Blossoms Park</span>
+        </div>
+        <div class="meta-item">
+            <span class="meta-label">🎟 Cost</span>
+            <span class="meta-value">Free</span>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="page-wrapper">
+
+        <div class="main-col">
+
+            <p class="section-label">About this event</p>
+            <h2 class="section-title">Trick or Treat at Blossoms Park!</h2>
+
+            <div class="section-body">
+                <p>
+                    Every October 31st, Blossoms Park comes alive with spooky fun for
+                    the whole family! Put on your best costume and join your neighbors
+                    for an evening of trick-or-treating, games, and Halloween festivities
+                    from 4:00 PM to 6:00 PM.
+                </p>
+                <p>
+                    Whether you're bringing little ghouls and goblins for their first
+                    trick-or-treat experience or just love the Halloween spirit, this is
+                    the perfect community celebration to get into the spooky season with
+                    friends and neighbors!
+                </p>
+            </div>
+
+            <p class="section-label" style="margin-top: 36px;">What to expect</p>
+            <ul class="detail-list">
+                <li>Trick-or-treating throughout Blossoms Park</li>
+                <li>Costume contest — show off your best look!</li>
+                <li>Spooky games and activities for all ages</li>
+                <li>Halloween treats and goodies for the kids</li>
+                <li>Free and open to all — costumes encouraged but not required!</li>
+            </ul>
+
+        </div>
+
+        <!-- SIDEBAR -->
+        <aside>
+            <div class="sidebar-card">
+                <div class="sidebar-card-header">Event Details</div>
+                <div class="sidebar-card-body">
+                    <div class="sidebar-row">
+                        <span class="label">Date</span>
+                        <span class="value">October 31st (Annual)</span>
+                    </div>
+                    <div class="sidebar-row">
+                        <span class="label">Time</span>
+                        <span class="value">4:00 PM – 6:00 PM</span>
+                    </div>
+                    <div class="sidebar-row">
+                        <span class="label">Location</span>
+                        <span class="value">Blossoms Park</span>
+                    </div>
+                    <div class="sidebar-row">
+                        <span class="label">Hosted by</span>
+                        <span class="value">ComeUnity Space</span>
+                    </div>
+                    <div class="sidebar-row">
+                        <span class="label">Cost</span>
+                        <span class="value">Free & open to all</span>
+                    </div>
+                    <a class="cta-btn" href="../calendar.html">ComeUnity Calendar</a>
+                </div>
+            </div>
+        </aside>
+
+    </div>
+
+    <!-- GALLERY -->
+    <section class="gallery-section">
+        <div class="divider"></div>
+        <p class="section-label" style="margin-top: 40px;">Photos</p>
+        <h2 class="section-title" style="font-size: 22px;">A glimpse at past Halloweens</h2>
+        <div class="gallery-grid">
+            <img src="https://i.guim.co.uk/img/media/7e9a77ccf74ce14278bc8354fc243141adea813d/0_119_5600_3360/master/5600.jpg?width=620&dpr=1&s=none&crop=none" alt="Halloween photo">
+        </div>
+    </section>
+
+    <script>
+        document.querySelector('.rsvp-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for your RSVP! We look forward to seeing you at Halloween! 🎃');
+            this.reset();
+        });
+    </script>
+
+</body>
+</html>

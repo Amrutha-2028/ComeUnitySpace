@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="event-subpage.css">
+    <link rel="icon" type="image/x-icon" href="../resourceHubLogo.ico.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Happy+Monkey&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <title>Thanksgiving Food Drive</title>
+
+    <style>
+        :root {
+            --accent:      #b8601e;
+            --accent-soft: #f0d8c0;
+        }
+        .hero {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxqHitB_ycZVsgLiRoU5v9sFVAyOHJzUiUwQ&s');
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <div class="hero">
+        <div class="hero-content">
+            <span class="hero-tag">Annual Event</span>
+            <h1 class="hero-title">Thanksgiving Food Drive 🦃</h1>
+        </div>
+    </div>
+
+    <!-- META BAR -->
+    <div class="meta-bar">
+        <div class="meta-item">
+            <span class="meta-label">📅 When</span>
+            <span class="meta-value">November 25th</span>
+        </div>
+        <div class="meta-item">
+            <span class="meta-label">🕙 Time</span>
+            <span class="meta-value">All Day</span>
+        </div>
+        <div class="meta-item">
+            <span class="meta-label">📍 Where</span>
+            <span class="meta-value">Blossoms Park</span>
+        </div>
+        <div class="meta-item">
+            <span class="meta-label">🎟 Cost</span>
+            <span class="meta-value">Free</span>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="page-wrapper">
+
+        <div class="main-col">
+
+            <p class="section-label">About this event</p>
+            <h2 class="section-title">Share the Feast This Thanksgiving!</h2>
+
+            <div class="section-body">
+                <p>
+                    Every November 25th, our community gathers at Blossoms Park to
+                    make sure no neighbor goes without a Thanksgiving meal. Our
+                    Thanksgiving Food Drive collects food donations and brings
+                    volunteers together all day long to pack food trays for
+                    families in need right here in our neighborhood.
+                </p>
+                <p>
+                    Thanksgiving is all about gratitude and togetherness — and what
+                    better way to celebrate than by giving back to those around us?
+                    Drop off a donation, stay to help pack trays, or simply come
+                    show your support. Every act of kindness counts!
+                </p>
+            </div>
+
+            <p class="section-label" style="margin-top: 36px;">What to expect</p>
+            <ul class="detail-list">
+                <li>Drop off non-perishable food donations at collection tables</li>
+                <li>Help volunteers pack Thanksgiving food trays for families in need</li>
+                <li>Most needed items: canned goods, stuffing, cranberry sauce, and pasta</li>
+                <li>A warm, grateful community atmosphere all day long</li>
+                <li>Drop-in format — stop by anytime throughout the day</li>
+            </ul>
+
+        </div>
+
+        <!-- SIDEBAR -->
+        <aside>
+            <div class="sidebar-card">
+                <div class="sidebar-card-header">Event Details</div>
+                <div class="sidebar-card-body">
+                    <div class="sidebar-row">
+                        <span class="label">Date</span>
+                        <span class="value">November 25th (Annual)</span>
+                    </div>
+                    <div class="sidebar-row">
+                        <span class="label">Time</span>
+                        <span class="value">All Day</span>
+                    </div>
+                    <div class="sidebar-row">
+                        <span class="label">Location</span>
+                        <span class="value">Blossoms Park</span>
+                    </div>
+                    <div class="sidebar-row">
+                        <span class="label">Hosted by</span>
+                        <span class="value">ComeUnity Space</span>
+                    </div>
+                    <div class="sidebar-row">
+                        <span class="label">Cost</span>
+                        <span class="value">Free & open to all</span>
+                    </div>
+                    <a class="cta-btn" href="../calendar.html">ComeUnity Calendar</a>
+                </div>
+            </div>
+        </aside>
+
+    </div>
+
+    <!-- RSVP FORM -->
+    <section class="rsvp-section">
+        <div class="divider"></div>
+        <p class="section-label" style="margin-top: 40px;">RSVP</p>
+        <h2 class="section-title">Help Us Feed Our Neighbors!</h2>
+        <form class="rsvp-form" action="#" method="post">
+            <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="participants">Number of Attendees *</label>
+                <input type="number" id="participants" name="participants" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="role">How Would You Like to Help?</label>
+                <select id="role" name="role">
+                    <option value="">Select one (optional)</option>
+                    <option value="donate">Donating food 🥫</option>
+                    <option value="pack">Helping pack food trays 📦</option>
+                    <option value="organize">Sorting and organizing donations</option>
+                    <option value="both">Donating and volunteering</option>
+                    <option value="other">Just showing support 🦃</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="special-requests">Additional Notes</label>
+                <textarea id="special-requests" name="special-requests" rows="3" placeholder="Any accessibility needs or other notes..."></textarea>
+            </div>
+            <button type="submit" class="rsvp-btn">Submit RSVP</button>
+        </form>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery-section">
+        <div class="divider"></div>
+        <p class="section-label" style="margin-top: 40px;">Photos</p>
+        <h2 class="section-title" style="font-size: 22px;">A glimpse at past Thanksgiving drives</h2>
+        <div class="gallery-grid">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxqHitB_ycZVsgLiRoU5v9sFVAyOHJzUiUwQ&s" alt="Thanksgiving Food Drive photo">
+        </div>
+    </section>
+
+    <script>
+        document.querySelector('.rsvp-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for your RSVP! We look forward to giving thanks together! 🦃');
+            this.reset();
+        });
+    </script>
+
+</body>
+</html>

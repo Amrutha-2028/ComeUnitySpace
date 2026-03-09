@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="event-subpage.css">
+    <link rel="icon" type="image/x-icon" href="../resourceHubLogo.ico.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Happy+Monkey&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <title>Valentine's Day</title>
+
+    <style>
+        :root {
+            --accent:      #d45c7a;
+            --accent-soft: #f5c8d4;
+        }
+        .hero {
+            background-image: url('https://chicagoridgeparks.com/wp-content/uploads/2018/11/Valentines-Day-Card-Making-Seniors-1024x573.jpg');
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <div class="hero">
+        <div class="hero-content">
+            <span class="hero-tag">Annual Event</span>
+            <h1 class="hero-title">Valentine's Day 💕</h1>
+        </div>
+    </div>
+
+    <!-- META BAR -->
+    <div class="meta-bar">
+        <div class="meta-item">
+            <span class="meta-label">📅 When</span>
+            <span class="meta-value">February 14th</span>
+        </div>
+        <div class="meta-item">
+            <span class="meta-label">🕙 Time</span>
+            <span class="meta-value">10:00 AM – 5:00 PM</span>
+        </div>
+        <div class="meta-item">
+            <span class="meta-label">📍 Where</span>
+            <span class="meta-value">Daisy Park</span>
+        </div>
+        <div class="meta-item">
+            <span class="meta-label">🎟 Cost</span>
+            <span class="meta-value">Free</span>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="page-wrapper">
+
+        <div class="main-col">
+
+            <p class="section-label">About this event</p>
+            <h2 class="section-title">Spread the Love at Daisy Park!</h2>
+
+            <div class="section-body">
+                <p>
+                    Every February 14th, Daisy Park is filled with love, laughter, and
+                    sweet treats! Bring your friends, family, or that special someone for
+                    a day of heartfelt fun — from decorating heart-shaped cookies to
+                    crafting handmade cards, there's something for everyone to enjoy.
+                </p>
+                <p>
+                    Whether you're celebrating with a partner, your kids, or your best
+                    friends, our Valentine's Day event is all about showing appreciation
+                    for the people in your life and connecting with your community.
+                    Come make some sweet memories with us!
+                </p>
+            </div>
+
+            <p class="section-label" style="margin-top: 36px;">What to expect</p>
+            <ul class="detail-list">
+                <li>Heart-shaped cookie decorating for all ages</li>
+                <li>Handmade Valentine's card crafting station</li>
+                <li>A festive, love-filled atmosphere at Daisy Park</li>
+                <li>Great for families, couples, friends, and solo visitors alike</li>
+                <li>Free and open to all — drop in anytime from 10:00 AM to 5:00 PM</li>
+            </ul>
+
+        </div>
+
+        <!-- SIDEBAR -->
+        <aside>
+            <div class="sidebar-card">
+                <div class="sidebar-card-header">Event Details</div>
+                <div class="sidebar-card-body">
+                    <div class="sidebar-row">
+                        <span class="label">Date</span>
+                        <span class="value">February 14th (Annual)</span>
+                    </div>
+                    <div class="sidebar-row">
+                        <span class="label">Time</span>
+                        <span class="value">10:00 AM – 5:00 PM</span>
+                    </div>
+                    <div class="sidebar-row">
+                        <span class="label">Location</span>
+                        <span class="value">Daisy Park</span>
+                    </div>
+                    <div class="sidebar-row">
+                        <span class="label">Hosted by</span>
+                        <span class="value">ComeUnity Space</span>
+                    </div>
+                    <div class="sidebar-row">
+                        <span class="label">Cost</span>
+                        <span class="value">Free & open to all</span>
+                    </div>
+                    <a class="cta-btn" href="../calendar.html">ComeUnity Calendar</a>
+                </div>
+            </div>
+        </aside>
+
+    </div>
+
+    <!-- RSVP FORM -->
+    <section class="rsvp-section">
+        <div class="divider"></div>
+        <p class="section-label" style="margin-top: 40px;">RSVP</p>
+        <h2 class="section-title">Join Us for Valentine's Day!</h2>
+        <form class="rsvp-form" action="#" method="post">
+            <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="participants">Number of Attendees *</label>
+                <input type="number" id="participants" name="participants" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="activity">What Are You Most Excited For?</label>
+                <select id="activity" name="activity">
+                    <option value="">Select one (optional)</option>
+                    <option value="cookies">Cookie decorating 🍪</option>
+                    <option value="cards">Card making ✉️</option>
+                    <option value="community">Meeting the community 💕</option>
+                    <option value="all">All of it!</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="special-requests">Additional Notes</label>
+                <textarea id="special-requests" name="special-requests" rows="3" placeholder="Any dietary restrictions, accessibility needs, or other notes..."></textarea>
+            </div>
+            <button type="submit" class="rsvp-btn">Submit RSVP</button>
+        </form>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery-section">
+        <div class="divider"></div>
+        <p class="section-label" style="margin-top: 40px;">Photos</p>
+        <h2 class="section-title" style="font-size: 22px;">A glimpse at past Valentine's Days</h2>
+        <div class="gallery-grid">
+            <img src="https://chicagoridgeparks.com/wp-content/uploads/2018/11/Valentines-Day-Card-Making-Seniors-1024x573.jpg" alt="Valentine's Day photo">
+        </div>
+    </section>
+
+    <script>
+        document.querySelector('.rsvp-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for your RSVP! We look forward to seeing you at our Valentine\'s Day celebration! 💕');
+            this.reset();
+        });
+    </script>
+
+</body>
+</html>

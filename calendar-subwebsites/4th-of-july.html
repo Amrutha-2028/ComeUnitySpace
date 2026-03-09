@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="event-subpage.css">
+    <link rel="icon" type="image/x-icon" href="../resourceHubLogo.ico.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Happy+Monkey&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <title>4th of July</title>
+
+    <style>
+        :root {
+            --accent:      #c0392b;
+            --accent-soft: #f5c0bc;
+        }
+        .hero {
+            background-image: url('https://media-cldnry.s-nbcnews.com/image/upload/t_fit-860w,f_auto,q_auto:best/rockcms/2023-07/230704-july-4-mb-2036-cfa5e2.jpg');
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <div class="hero">
+        <div class="hero-content">
+            <span class="hero-tag">Annual Event</span>
+            <h1 class="hero-title">4th of July 🎆</h1>
+        </div>
+    </div>
+
+    <!-- META BAR -->
+    <div class="meta-bar">
+        <div class="meta-item">
+            <span class="meta-label">📅 When</span>
+            <span class="meta-value">July 4th</span>
+        </div>
+        <div class="meta-item">
+            <span class="meta-label">🕙 Time</span>
+            <span class="meta-value">10:00 AM – 3:00 PM</span>
+        </div>
+        <div class="meta-item">
+            <span class="meta-label">📍 Where</span>
+            <span class="meta-value">Blossoms Park</span>
+        </div>
+        <div class="meta-item">
+            <span class="meta-label">🎟 Cost</span>
+            <span class="meta-value">Free</span>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="page-wrapper">
+
+        <div class="main-col">
+
+            <p class="section-label">About this event</p>
+            <h2 class="section-title">Celebrate Independence Day at Blossoms Park!</h2>
+
+            <div class="section-body">
+                <p>
+                    Every July 4th, Blossoms Park lights up with patriotic pride and
+                    community spirit! Join us for a full morning of Independence Day
+                    festivities — from fun 4th of July activities to a community parade
+                    that brings the whole neighborhood together.
+                </p>
+                <p>
+                    Come dressed in your red, white, and blue and celebrate the holiday
+                    the ComeUnity way — surrounded by neighbors, laughter, and the joy
+                    of being part of something bigger than ourselves. From 10:00 AM to
+                    3:00 PM, Blossoms Park is the place to be!
+                </p>
+            </div>
+
+            <p class="section-label" style="margin-top: 36px;">What to expect</p>
+            <ul class="detail-list">
+                <li>Fun 4th of July themed activities for all ages</li>
+                <li>A community parade through Blossoms Park — join the march!</li>
+                <li>Patriotic decorations and a festive Independence Day atmosphere</li>
+                <li>Great for families — bring the kids and grandparents!</li>
+                <li>Free and open to all — wear your red, white, and blue!</li>
+            </ul>
+
+        </div>
+
+        <!-- SIDEBAR -->
+        <aside>
+            <div class="sidebar-card">
+                <div class="sidebar-card-header">Event Details</div>
+                <div class="sidebar-card-body">
+                    <div class="sidebar-row">
+                        <span class="label">Date</span>
+                        <span class="value">July 4th (Annual)</span>
+                    </div>
+                    <div class="sidebar-row">
+                        <span class="label">Time</span>
+                        <span class="value">10:00 AM – 3:00 PM</span>
+                    </div>
+                    <div class="sidebar-row">
+                        <span class="label">Location</span>
+                        <span class="value">Blossoms Park</span>
+                    </div>
+                    <div class="sidebar-row">
+                        <span class="label">Hosted by</span>
+                        <span class="value">ComeUnity Space</span>
+                    </div>
+                    <div class="sidebar-row">
+                        <span class="label">Cost</span>
+                        <span class="value">Free & open to all</span>
+                    </div>
+                    <a class="cta-btn" href="../calendar.html">ComeUnity Calendar</a>
+                </div>
+            </div>
+        </aside>
+
+    </div>
+
+    <!-- RSVP FORM -->
+    <section class="rsvp-section">
+        <div class="divider"></div>
+        <p class="section-label" style="margin-top: 40px;">RSVP</p>
+        <h2 class="section-title">Join Us for the 4th of July!</h2>
+        <form class="rsvp-form" action="#" method="post">
+            <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="participants">Number of Attendees *</label>
+                <input type="number" id="participants" name="participants" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="activity">What Are You Most Excited For?</label>
+                <select id="activity" name="activity">
+                    <option value="">Select one (optional)</option>
+                    <option value="parade">The community parade 🎺</option>
+                    <option value="activities">4th of July activities 🎉</option>
+                    <option value="community">Celebrating with neighbors 🇺🇸</option>
+                    <option value="all">All of it!</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="special-requests">Additional Notes</label>
+                <textarea id="special-requests" name="special-requests" rows="3" placeholder="Any accessibility needs or other notes..."></textarea>
+            </div>
+            <button type="submit" class="rsvp-btn">Submit RSVP</button>
+        </form>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery-section">
+        <div class="divider"></div>
+        <p class="section-label" style="margin-top: 40px;">Photos</p>
+        <h2 class="section-title" style="font-size: 22px;">A glimpse at past 4th of July celebrations</h2>
+        <div class="gallery-grid">
+            <img src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-860w,f_auto,q_auto:best/rockcms/2023-07/230704-july-4-mb-2036-cfa5e2.jpg" alt="4th of July photo">
+        </div>
+    </section>
+
+    <script>
+        document.querySelector('.rsvp-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for your RSVP! We look forward to celebrating Independence Day with you! 🎆');
+            this.reset();
+        });
+    </script>
+
+</body>
+</html>

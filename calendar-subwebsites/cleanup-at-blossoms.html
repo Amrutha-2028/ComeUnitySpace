@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="event-subpage.css">
+    <link rel="icon" type="image/x-icon" href="../resourceHubLogo.ico.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Happy+Monkey&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <title>Cleanup at Blossoms</title>
+
+    <style>
+        :root {
+            --accent:      #3d8c5e;
+            --accent-soft: #b8e0cb;
+        }
+        .hero {
+            background-image: url('https://www.dixonpilot.com/wp-content/uploads/2021/09/BExDE5S8ccd4NJailCsxED4r6F8sRIA51632313995.jpg');
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <div class="hero">
+        <div class="hero-content">
+            <span class="hero-tag">Monthly Event</span>
+            <h1 class="hero-title">Cleanup at Blossoms</h1>
+        </div>
+    </div>
+
+    <!-- META BAR -->
+    <div class="meta-bar">
+        <div class="meta-item">
+            <span class="meta-label">📅 When</span>
+            <span class="meta-value">2nd & 26th of every month</span>
+        </div>
+        <div class="meta-item">
+            <span class="meta-label">🕙 Time</span>
+            <span class="meta-value">11:00 AM – 4:00 PM</span>
+        </div>
+        <div class="meta-item">
+            <span class="meta-label">📍 Where</span>
+            <span class="meta-value">Blossoms Park</span>
+        </div>
+        <div class="meta-item">
+            <span class="meta-label">🎟 Cost</span>
+            <span class="meta-value">Free</span>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="page-wrapper">
+
+        <div class="main-col">
+
+            <p class="section-label">About this event</p>
+            <h2 class="section-title">What do we do at Cleanup at Blossoms?</h2>
+
+            <div class="section-body">
+                <p>
+                    Twice a month, volunteers gather at Blossoms Park to roll up their
+                    sleeves and keep our community beautiful. From picking up litter to
+                    tidying up green spaces, every pair of hands makes a huge difference.
+                </p>
+                <p>
+                    The main cleanup session kicks off at 3:00 PM, but feel free to
+                    arrive anytime between 11:00 AM and 4:00 PM. Gloves, bags, and
+                    supplies are provided — just bring your energy and a love for
+                    keeping Blossoms looking its best!
+                </p>
+            </div>
+
+            <p class="section-label" style="margin-top: 36px;">What to expect</p>
+            <ul class="detail-list">
+                <li>Litter pickup and general park tidying throughout the day</li>
+                <li>Main cleanup session starts at 3:00 PM — all hands on deck!</li>
+                <li>Gloves, trash bags, and supplies provided on-site</li>
+                <li>Family friendly — a great activity to bring kids along</li>
+                <li>Drop-in anytime between 11:00 AM and 4:00 PM</li>
+            </ul>
+
+        </div>
+
+        <!-- SIDEBAR -->
+        <aside>
+            <div class="sidebar-card">
+                <div class="sidebar-card-header">Event Details</div>
+                <div class="sidebar-card-body">
+                    <div class="sidebar-row">
+                        <span class="label">Frequency</span>
+                        <span class="value">2nd & 26th of every month</span>
+                    </div>
+                    <div class="sidebar-row">
+                        <span class="label">Time</span>
+                        <span class="value">11:00 AM – 4:00 PM</span>
+                    </div>
+                    <div class="sidebar-row">
+                        <span class="label">Main Session</span>
+                        <span class="value">Starts at 3:00 PM</span>
+                    </div>
+                    <div class="sidebar-row">
+                        <span class="label">Location</span>
+                        <span class="value">Blossoms Park</span>
+                    </div>
+                    <div class="sidebar-row">
+                        <span class="label">Hosted by</span>
+                        <span class="value">ComeUnity Space</span>
+                    </div>
+                    <div class="sidebar-row">
+                        <span class="label">Cost</span>
+                        <span class="value">Free & open to all</span>
+                    </div>
+                    <a class="cta-btn" href="../calendar.html">ComeUnity Calendar</a>
+                </div>
+            </div>
+        </aside>
+
+    </div>
+
+    <!-- RSVP FORM -->
+    <section class="rsvp-section">
+        <div class="divider"></div>
+        <p class="section-label" style="margin-top: 40px;">RSVP</p>
+        <h2 class="section-title">Sign Up to Help Clean Up!</h2>
+        <form class="rsvp-form" action="#" method="post">
+            <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="participants">Number of Volunteers *</label>
+                <input type="number" id="participants" name="participants" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Which Date Are You Joining?</label>
+                <select id="date" name="date">
+                    <option value="">Select a date (optional)</option>
+                    <option value="2nd">The 2nd of the month</option>
+                    <option value="26th">The 26th of the month</option>
+                    <option value="both">Both dates!</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="special-requests">Additional Notes</label>
+                <textarea id="special-requests" name="special-requests" rows="3" placeholder="Any accessibility needs or other notes..."></textarea>
+            </div>
+            <button type="submit" class="rsvp-btn">Submit RSVP</button>
+        </form>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery-section">
+        <div class="divider"></div>
+        <p class="section-label" style="margin-top: 40px;">Photos</p>
+        <h2 class="section-title" style="font-size: 22px;">A glimpse at past cleanups</h2>
+        <div class="gallery-grid">
+            <img src="https://www.dixonpilot.com/wp-content/uploads/2021/09/BExDE5S8ccd4NJailCsxED4r6F8sRIA51632313995.jpg" alt="Cleanup at Blossoms photo">
+        </div>
+    </section>
+
+    <script>
+        document.querySelector('.rsvp-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for signing up! We look forward to seeing you at the Cleanup at Blossoms.');
+            this.reset();
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="event-subpage.css">
+    <link rel="icon" type="image/x-icon" href="../resourceHubLogo.ico.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Happy+Monkey&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <title>Hot Cocoa Social</title>
+
+    <style>
+        :root {
+            --accent:      #9b6b3e;
+            --accent-soft: #ecddc8;
+        }
+        .hero {
+            background-image: url('https://www.littlespicejar.com/wp-content/uploads/2016/12/DIY-Hot-Chocolate-Bar-The-Best-Hot-Chocolate-7.jpg');
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <div class="hero">
+        <div class="hero-content">
+            <span class="hero-tag">Annual Event</span>
+            <h1 class="hero-title">Hot Cocoa Social ☕</h1>
+        </div>
+    </div>
+
+    <!-- META BAR -->
+    <div class="meta-bar">
+        <div class="meta-item">
+            <span class="meta-label">📅 When</span>
+            <span class="meta-value">January 13th</span>
+        </div>
+        <div class="meta-item">
+            <span class="meta-label">🕙 Time</span>
+            <span class="meta-value">10:00 AM – 12:00 PM</span>
+        </div>
+        <div class="meta-item">
+            <span class="meta-label">📍 Where</span>
+            <span class="meta-value">Blossoms Park</span>
+        </div>
+        <div class="meta-item">
+            <span class="meta-label">🎟 Cost</span>
+            <span class="meta-value">Free</span>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="page-wrapper">
+
+        <div class="main-col">
+
+            <p class="section-label">About this event</p>
+            <h2 class="section-title">What happens at the Hot Cocoa Social?</h2>
+
+            <div class="section-body">
+                <p>
+                    Kick off the new year with warmth and good company! Every January 13th,
+                    neighbors gather at Blossoms Park for our cozy Hot Cocoa Social — a
+                    morning filled with steaming mugs of hot cocoa, delicious toppings,
+                    and plenty of friendly conversation.
+                </p>
+                <p>
+                    Whether you're a longtime resident or brand new to the neighborhood,
+                    this is the perfect low-key event to meet new people, catch up with
+                    old friends, and start the year feeling connected to your community.
+                    Come as you are and stay as long as you like!
+                </p>
+            </div>
+
+            <p class="section-label" style="margin-top: 36px;">What to expect</p>
+            <ul class="detail-list">
+                <li>A hot cocoa stand loaded with goodies and toppings to customize your cup</li>
+                <li>Warm, welcoming atmosphere perfect for meeting new neighbors</li>
+                <li>Cozy winter vibes at Blossoms Park from 10:00 AM to 12:00 PM</li>
+                <li>Great for all ages — bring the whole family!</li>
+                <li>Free and open to all — just show up and enjoy!</li>
+            </ul>
+
+        </div>
+
+        <!-- SIDEBAR -->
+        <aside>
+            <div class="sidebar-card">
+                <div class="sidebar-card-header">Event Details</div>
+                <div class="sidebar-card-body">
+                    <div class="sidebar-row">
+                        <span class="label">Date</span>
+                        <span class="value">January 13th (Annual)</span>
+                    </div>
+                    <div class="sidebar-row">
+                        <span class="label">Time</span>
+                        <span class="value">10:00 AM – 12:00 PM</span>
+                    </div>
+                    <div class="sidebar-row">
+                        <span class="label">Location</span>
+                        <span class="value">Blossoms Park</span>
+                    </div>
+                    <div class="sidebar-row">
+                        <span class="label">Hosted by</span>
+                        <span class="value">ComeUnity Space</span>
+                    </div>
+                    <div class="sidebar-row">
+                        <span class="label">Cost</span>
+                        <span class="value">Free & open to all</span>
+                    </div>
+                    <a class="cta-btn" href="../calendar.html">ComeUnity Calendar</a>
+                </div>
+            </div>
+        </aside>
+
+    </div>
+
+    <!-- RSVP FORM -->
+    <section class="rsvp-section">
+        <div class="divider"></div>
+        <p class="section-label" style="margin-top: 40px;">RSVP</p>
+        <h2 class="section-title">Join Us for the Hot Cocoa Social!</h2>
+        <form class="rsvp-form" action="#" method="post">
+            <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="participants">Number of Attendees *</label>
+                <input type="number" id="participants" name="participants" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="topping">Favorite Hot Cocoa Topping?</label>
+                <select id="topping" name="topping">
+                    <option value="">Select one (optional)</option>
+                    <option value="marshmallows">Marshmallows ☁️</option>
+                    <option value="whipped-cream">Whipped Cream</option>
+                    <option value="sprinkles">Sprinkles 🎉</option>
+                    <option value="caramel">Caramel Drizzle</option>
+                    <option value="all">All of the above!</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="special-requests">Additional Notes</label>
+                <textarea id="special-requests" name="special-requests" rows="3" placeholder="Any dietary restrictions, accessibility needs, or other notes..."></textarea>
+            </div>
+            <button type="submit" class="rsvp-btn">Submit RSVP</button>
+        </form>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery-section">
+        <div class="divider"></div>
+        <p class="section-label" style="margin-top: 40px;">Photos</p>
+        <h2 class="section-title" style="font-size: 22px;">A glimpse at past socials</h2>
+        <div class="gallery-grid">
+            <img src="https://www.littlespicejar.com/wp-content/uploads/2016/12/DIY-Hot-Chocolate-Bar-The-Best-Hot-Chocolate-7.jpg" alt="Hot Cocoa Social photo">
+        </div>
+    </section>
+
+    <script>
+        document.querySelector('.rsvp-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for your RSVP! We look forward to seeing you at the Hot Cocoa Social! ☕');
+            this.reset();
+        });
+    </script>
+
+</body>
+</html>
