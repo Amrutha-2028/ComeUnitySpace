@@ -106,6 +106,7 @@ div {
     background-color: #efeded;
     min-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
 }
 
 .dropdown-content a {
@@ -122,6 +123,7 @@ div {
 .dropdown-content a:hover {
     background-color: #004aad;
     color: #efeded;
+    border-radius: 30px;
 }
 
 /*only show menu if the button is hovered OR the menu itself is hovered*/
