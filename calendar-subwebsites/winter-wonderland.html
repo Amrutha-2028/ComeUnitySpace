@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="event-subpage.css">
+    <link rel="icon" type="image/x-icon" href="../resourceHubLogo.ico.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Happy+Monkey&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <title>Winter Wonderland</title>
+
+    <style>
+        :root {
+            --accent:      #6aafd6;
+            --accent-soft: #d4edf8;
+        }
+        .hero {
+            background-image: url('https://www.japan-guide.com/g18/5311_01.jpg');
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <div class="hero">
+        <div class="hero-content">
+            <span class="hero-tag">Annual Event</span>
+            <h1 class="hero-title">Winter Wonderland</h1>
+        </div>
+    </div>
+
+    <!-- META BAR -->
+    <div class="meta-bar">
+        <div class="meta-item">
+            <span class="meta-label">📅 When</span>
+            <span class="meta-value">December 28th</span>
+        </div>
+        <div class="meta-item">
+            <span class="meta-label">🕙 Time</span>
+            <span class="meta-value">11:00 AM – 5:00 PM</span>
+        </div>
+        <div class="meta-item">
+            <span class="meta-label">📍 Where</span>
+            <span class="meta-value">Blossoms Park</span>
+        </div>
+        <div class="meta-item">
+            <span class="meta-label">🎟 Cost</span>
+            <span class="meta-value">Free</span>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="page-wrapper">
+
+        <div class="main-col">
+
+            <p class="section-label">About this event</p>
+            <h2 class="section-title">What happens at Winter Wonderland?</h2>
+
+            <div class="section-body">
+                <p>
+                    Every year on December 28th, Blossoms Park transforms into a magical
+                    Winter Wonderland! From fun seasonal activities to amazing food vendors,
+                    this is one of the most beloved events of the year for families and
+                    neighbors to celebrate the holiday season together.
+                </p>
+                <p>
+                    Come enjoy a full day of winter festivities from 11:00 AM to 5:00 PM.
+                    Whether you're looking to make memories with your family, grab
+                    something delicious from our vendors, or just soak in the cozy
+                    winter atmosphere — this is the place to be!
+                </p>
+            </div>
+
+            <p class="section-label" style="margin-top: 36px;">What to expect</p>
+            <ul class="detail-list">
+                <li>Fun winter activities for all ages throughout the day</li>
+                <li>Amazing food vendors serving seasonal treats and warm drinks</li>
+                <li>A festive atmosphere perfect for families and friends</li>
+                <li>Live entertainment and community performances</li>
+                <li>Free and open to all — no tickets required, just show up!</li>
+            </ul>
+
+        </div>
+
+        <!-- SIDEBAR -->
+        <aside>
+            <div class="sidebar-card">
+                <div class="sidebar-card-header">Event Details</div>
+                <div class="sidebar-card-body">
+                    <div class="sidebar-row">
+                        <span class="label">Date</span>
+                        <span class="value">December 28th (Annual)</span>
+                    </div>
+                    <div class="sidebar-row">
+                        <span class="label">Time</span>
+                        <span class="value">11:00 AM – 5:00 PM</span>
+                    </div>
+                    <div class="sidebar-row">
+                        <span class="label">Location</span>
+                        <span class="value">Blossoms Park</span>
+                    </div>
+                    <div class="sidebar-row">
+                        <span class="label">Hosted by</span>
+                        <span class="value">ComeUnity Space</span>
+                    </div>
+                    <div class="sidebar-row">
+                        <span class="label">Cost</span>
+                        <span class="value">Free & open to all</span>
+                    </div>
+                    <a class="cta-btn" href="../calendar.html">ComeUnity Calendar</a>
+                </div>
+            </div>
+        </aside>
+
+    </div>
+
+
+    <!-- GALLERY -->
+    <section class="gallery-section">
+        <div class="divider"></div>
+        <p class="section-label" style="margin-top: 40px;">Photos</p>
+        <h2 class="section-title" style="font-size: 22px;">A glimpse at past Winter Wonderlands</h2>
+        <div class="gallery-grid">
+            <img src="https://www.japan-guide.com/g18/5311_01.jpg" alt="Winter Wonderland photo">
+        </div>
+    </section>
+
+    <script>
+        document.querySelector('.rsvp-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for your RSVP! We look forward to seeing you at Winter Wonderland! ❄️');
+            this.reset();
+        });
+    </script>
+
+</body>
+</html>

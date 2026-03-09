@@ -45,6 +45,32 @@
 
     <h1>ComeUnity Calendar</h1>
     <h4>(Please keep in mind that these are not real events or places)</h4>
+
+    <!-- Legend -->
+    <div class="legend">
+        <h3>Event Legend</h3>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #d5cdff;"></div>
+            <span>Meetings</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #cdffcd;"></div>
+            <span>Cleanups</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #ffeecd;"></div>
+            <span>Food Drives</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #ffcdcd;"></div>
+            <span>Holidays / Events</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #ffcdf3;"></div>
+            <span>Story Time</span>
+        </div>
+    </div>
+
     <!-- This is the calendar container-->
     <div class="calendar-container">
         <!--This is the header of the calendar-->
@@ -74,6 +100,7 @@
             <p><strong>Time: </strong><span id="modal-time"></span></p>
             <p><strong>Location: </strong><span id="modal-location"></span></p>
             <p id="modal-details"></p>
+            <p><a id="modal-visit-link" href="" target="_blank">Visit Website</a></p>
             <span id="close-modal" class="close">&times;</span>
         </div>
     </div>
