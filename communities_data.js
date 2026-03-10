@@ -1,5 +1,3 @@
-//-------------data-------------\\
-
 const communities = [
   {
     name: "One Gen Away Food Bank",
@@ -8,7 +6,8 @@ const communities = [
     phone: "(844)-642-4673",
     category: "Food Assistance",
     website: "https://onegenaway.com/",
-    rating: 4.9
+    rating: 4.9,
+    image: "https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&q=80&w=800"
   },
   {
     name: "GraceWorks Ministries",
@@ -17,7 +16,8 @@ const communities = [
     phone: "(615)-794-9055",
     category: "Food Assistance",
     website: "https://www.graceworkstn.org/",
-    rating: 4.5
+    rating: 4.5,
+    image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=800"
   },
   {
     name: "The Well Outreach",
@@ -26,7 +26,8 @@ const communities = [
     phone: "615-302-9355",
     category: "Food Assistance",
     website: "https://thewelloutreach.org/",
-    rating: 4.2
+    rating: 4.2,
+    image: "https://www.columbiadailyherald.com/gcdn/presto/2020/10/03/NDHE/095be7e0-939d-4360-b554-a288c31f7fbb-2010-10-18-The-Well-Outreach-Mobile-Food-Pantry-03.jpg"
   },
   {
     name: "Nolensville Food Pantry",
@@ -35,7 +36,8 @@ const communities = [
     phone: "615-283-8197",
     category: "Food Assistance",
     website: "https://www.nolensvillefoodpantry.org/",
-    rating: 3.9
+    rating: 3.9,
+    image: "https://images.unsplash.com/photo-1599059813005-11265ba4b4ce?auto=format&fit=crop&q=80&w=800"
   },
   {
     name: "Habitat for Humanity (Williamson-Maury)",
@@ -44,7 +46,8 @@ const communities = [
     phone: "615-690-8090",
     category: "Housing & Community Development",
     website: "https://www.hfhwm.org/",
-    rating: 4.9
+    rating: 4.9,
+    image: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&q=80&w=800"
   },
   {
     name: "Franklin Housing Authority",
@@ -53,7 +56,8 @@ const communities = [
     phone: "(615)-794-1247",
     category: "Housing & Community Development",
     website: "https://www.franklinhousingauthority.com/",
-    rating: 3.5
+    rating: 3.5,
+    image: "https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&q=80&w=800"
   },
   {
     name: "Housing Development in City of Franklin, TN",
@@ -62,7 +66,8 @@ const communities = [
     phone: "615-791-3217",
     category: "Housing & Community Development",
     website: "https://www.franklintn.gov/services/development-building-services/development-building-services/housing-development",
-    rating: 4.0
+    rating: 4.0,
+    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800"
   },
   {
     name: "Franklin First United Methodist Church",
@@ -71,7 +76,8 @@ const communities = [
     phone: "615-794-2734",
     category: "Religious Community Assistance",
     website: "https://franklinfumc.org/",
-    rating: 4.6
+    rating: 4.6,
+    image: "https://ccschouston.org/wp-content/uploads/2023/07/Family-service-day-3.jpg"
   },
   {
     name: "FrankTown Open Hearts",
@@ -80,7 +86,8 @@ const communities = [
     phone: "615-807-0782",
     category: "Religious Community Assistance",
     website: "https://franktownopenhearts.com/",
-    rating: 4.8
+    rating: 4.8,
+    image: "https://bloximages.newyork1.vip.townnews.com/williamsonherald.com/content/tncms/assets/v3/editorial/9/62/9628647c-32c2-4a12-8bf8-fa3337f9bd7d/68f2af65b3260.image.jpg?resize=750%2C500"
   },
   {
     name: "Williamson County Animal Shelter",
@@ -89,7 +96,8 @@ const communities = [
     phone: "615-790-5590",
     category: "Animal Welfare",
     website: "https://www.adoptwcac.org/269/Fulfill-Community-Service-Hours",
-    rating: 4.4
+    rating: 4.4,
+    image: "https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&q=80&w=800"
   },
   {
     name: "Williamson County Animal Hospital",
@@ -98,7 +106,8 @@ const communities = [
     phone: "(615) 794-7113",
     category: "Animal Welfare",
     website: "https://www.wcah.org/",
-    rating: 4.3
+    rating: 4.3,
+    image: "https://images.unsplash.com/photo-1576201836106-db1758fd1c97?auto=format&fit=crop&q=80&w=800"
   },
   {
     name: "Animal Care Center of Brentwood",
@@ -107,7 +116,8 @@ const communities = [
     phone: "(615) 371-1242",
     category: "Animal Welfare",
     website: "https://www.animalcarecenterofbrentwood.com/",
-    rating: 3.8
+    rating: 3.8,
+    image: "https://images.unsplash.com/photo-1599443015574-be5fe8a05783?auto=format&fit=crop&q=80&w=800"
   },
   {
     name: "Keep Williamson Beautiful",
@@ -116,7 +126,8 @@ const communities = [
     phone: "615-786-0166",
     category: "Environmental & Community Clean-Up",
     website: "https://www.williamsoncounty-tn.gov/1453/Contact-KWB",
-    rating: 4.9
+    rating: 4.9,
+    image: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&q=80&w=800"
   },
   {
     name: "Harpeth Conservancy",
@@ -125,7 +136,8 @@ const communities = [
     phone: "(615) 790-9767",
     category: "Environmental & Community Clean-Up",
     website: "https://harpethconservancy.org/",
-    rating: 4.5
+    rating: 4.5,
+    image: "https://images.unsplash.com/photo-1470104240373-bc1812eddc9f?auto=format&fit=crop&q=80&w=800"
   },
   {
     name: "Cumberland River Compact",
@@ -134,7 +146,8 @@ const communities = [
     phone: "(615) 837-1151",
     category: "Environmental & Community Clean-Up",
     website: "https://cumberlandrivercompact.org/",
-    rating: 4.7
+    rating: 4.7,
+    image: "https://images.unsplash.com/photo-1503197979108-c824168d51a8?auto=format&fit=crop&q=80&w=800"
   },
   {
     name: "Tennessee Environmental Council (TEC)",
@@ -143,7 +156,8 @@ const communities = [
     phone: "615-248-6500",
     category: "Environmental & Community Clean-Up",
     website: "https://www.tectn.org/",
-    rating: 4.2
+    rating: 4.2,
+    image: "https://www.tectn.org/uploads/1/1/9/8/119801148/tec-glengarry-garden-photo_orig.jpg"
   },
   {
     name: "Volunteens TN / Volunteer Tennessee",
@@ -152,7 +166,8 @@ const communities = [
     phone: "(615) 253-1426",
     category: "Youth Volunteer Programs",
     website: "https://www.tn.gov/volunteer-tennessee.html",
-    rating: 4.0
+    rating: 4.0,
+    image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800"
   },
   {
     name: "Williamson County Library Volunteering",
@@ -161,7 +176,8 @@ const communities = [
     phone: "615-786-0142",
     category: "Youth Volunteer Programs",
     website: "https://wcpltn.org/306/Volunteer",
-    rating: 4.4
+    rating: 4.4,
+    image: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&q=80&w=800"
   },
   {
     name: "The John P. Holt Brentwood Library Volunteering",
@@ -170,7 +186,8 @@ const communities = [
     phone: "(615) 371-0090",
     category: "Youth Volunteer Programs",
     website: "https://library.brentwoodtn.gov/Support/Volunteer",
-    rating: 4.9
+    rating: 4.9,
+    image: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80&w=800"
   },
   {
     name: "Hands On Nashville / United Way",
@@ -179,7 +196,8 @@ const communities = [
     phone: "(615) 298-1108",
     category: "Non-Profit Organizations",
     website: "https://handson.unitedwaygreaternashville.org/organization/001A000000mJ3pGIAS?layoutViewMode=tablet",
-    rating: 4.8
+    rating: 4.8,
+    image: "https://mindtrip.ai/cdn-cgi/image/format=webp,w=1200/https://images.mindtrip.ai/attractions/25c1/193c/ec03/0603/fcf3/bc69/d879/e3d1"
   },
   {
     name: "American Red Cross",
@@ -188,7 +206,8 @@ const communities = [
     phone: "800-733-2767",
     category: "Non-Profit Organizations",
     website: "https://www.redcross.org/local/tennessee.html",
-    rating: 4.6
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&q=80&w=800"
   },
   {
     name: "We Care Williamson County",
@@ -197,7 +216,8 @@ const communities = [
     phone: "(615) 208-5068",
     category: "Non-Profit Organizations",
     website: "https://www.wecarewilliamsoncounty.org/",
-    rating: 4.1
+    rating: 4.1,
+    image: "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&q=80&w=800"
   },
   {
     name: "The Refuge Center for Counseling",
@@ -206,7 +226,8 @@ const communities = [
     phone: "(615) 591-5262",
     category: "Mental Health Services",
     website: "https://refugecenter.org/",
-    rating: 4.7
+    rating: 4.7,
+    image: "https://refugecenter.org/wp-content/uploads/2025/01/IMG_4016-2.jpg"
   },
   {
     name: "Mercy Community Healthcare",
@@ -215,7 +236,8 @@ const communities = [
     phone: "(615) 790-0567",
     category: "Mental Health Services",
     website: "https://mercytn.org/",
-    rating: 4.5
+    rating: 4.5,
+    image: "https://media.istockphoto.com/id/1468520185/photo/teamwork-planning-and-meeting-with-doctors-and-laptop-for-medical-review-and-healthcare.jpg?s=612x612&w=0&k=20&c=mzMOVtbPz2H-T6T4F4htxsq9YFdiKfllmQOYZnyR9GE="
   },
   {
     name: "Williamson County Mental Health",
@@ -224,7 +246,8 @@ const communities = [
     phone: "988",
     category: "Mental Health Services",
     website: "https://williamsoncountymentalhealth.org/services/",
-    rating: 3.7
+    rating: 3.7,
+    image: "https://media.istockphoto.com/id/871778784/photo/adorable-baby-boy-claps-during-medical-exam.jpg?s=612x612&w=0&k=20&c=BHWS0ghGxGLsgrfL303jS-bjkAKVqhNF3IbHtNLtUUE="
   },
   {
     name: "Find Hope Franklin",
@@ -233,7 +256,8 @@ const communities = [
     phone: "(877) 342-1450",
     category: "Mental Health Services",
     website: "https://findhopefranklin.com/",
-    rating: 4.2
+    rating: 4.2,
+    image: "https://www.careerstaff.com/wp-content/uploads/2024/05/best-healthcare-jobs-mental-health-field-1200x722.png"
   },
   {
     name: "NAMI - Williamson & Maury Counties",
@@ -242,7 +266,8 @@ const communities = [
     phone: "615-567-3793",
     category: "Mental Health Services",
     website: "https://www.nami.org/affiliate/tennessee/nami-williamson-and-maury-counties-tn/",
-    rating: 4.6
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=800"
   },
   {
     name: "Williamson County Sheriff",
@@ -251,7 +276,8 @@ const communities = [
     phone: "(615) 790-5560",
     category: "Emergency Services",
     website: "https://williamsoncountysherifftn.com/",
-    rating: 4.4
+    rating: 4.4,
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800"
   },
   {
     name: "Office of Public Safety",
@@ -260,7 +286,8 @@ const communities = [
     phone: "(615) 790-5757",
     category: "Emergency Services",
     website: "http://www.williamsonready.org/",
-    rating: 4.0
+    rating: 4.0,
+    image: "https://proambri.com/wp-content/uploads/2024/05/Ambulance-On-Street.jpg"
   },
   {
     name: "Mary Lee Bunch Associates",
@@ -269,7 +296,8 @@ const communities = [
     phone: "(615) 377-6370",
     category: "Education & Tutoring",
     website: "https://www.maryleebunch.com/",
-    rating: 4.3
+    rating: 4.3,
+    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800"
   },
   {
     name: "Williamson County Public Library Tutoring",
@@ -278,7 +306,8 @@ const communities = [
     phone: "(615) 595-1243",
     category: "Education & Tutoring",
     website: "https://wcpltn.org/403/Homework-Help-Test-Prep",
-    rating: 4.9
+    rating: 4.9,
+    image: "https://westportlibrary.org/wp-content/uploads/2023/10/Near-Peer-Tutoring.png"
   },
   {
     name: "Huntington Learning Center",
@@ -287,6 +316,7 @@ const communities = [
     phone: "(615) 376-8000",
     category: "Education & Tutoring",
     website: "https://huntingtonhelps.com/locations/brentwood-tn/llp/tutoring/",
-    rating: 4.1
+    rating: 4.1,
+    image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=800"
   }
 ];
