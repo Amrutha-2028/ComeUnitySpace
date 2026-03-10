@@ -1,6 +1,7 @@
 const communities = [
   {
-    name: "🍽️One Gen Away Food Bank",
+    name: "One Gen Away Food Bank",
+    emoji: "🍽️",
     address: "320 Premier Ct Suite 218, Franklin, TN 37067",
     email: "Annette@onegenaway.com",
     phone: "(844)-642-4673",
@@ -10,7 +11,8 @@ const communities = [
     image: "https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&q=80&w=800"
   },
   {
-    name: "🍽️GraceWorks Ministries",
+    name: "GraceWorks Ministries",
+    emoji: "🍽️",
     address: "104 Southeast Pkwy, Franklin, TN 37064",
     email: "info@graceworkstn.org",
     phone: "(615)-794-9055",
@@ -20,7 +22,8 @@ const communities = [
     image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=800"
   },
   {
-    name: "🍽️The Well Outreach",
+    name: "The Well Outreach",
+    emoji: "🍽️",
     address: "5306 Main St, Spring Hill, TN 37174",
     email: "info@thewelloutreach.org",
     phone: "615-302-9355",
@@ -30,7 +33,8 @@ const communities = [
     image: "https://www.columbiadailyherald.com/gcdn/presto/2020/10/03/NDHE/095be7e0-939d-4360-b554-a288c31f7fbb-2010-10-18-The-Well-Outreach-Mobile-Food-Pantry-03.jpg"
   },
   {
-    name: "🍽️Nolensville Food Pantry",
+    name: "Nolensville Food Pantry",
+    emoji: "🍽️",
     address: "1668 Sunset Rd, Nolensville, TN 37135",
     email: "info@nolensvillefoodpantry.org",
     phone: "615-283-8197",
@@ -40,7 +44,8 @@ const communities = [
     image: "https://images.unsplash.com/photo-1599059813005-11265ba4b4ce?auto=format&fit=crop&q=80&w=800"
   },
   {
-    name: "🏠Habitat for Humanity (Williamson-Maury)",
+    name: "Habitat for Humanity (Williamson-Maury)",
+    emoji: "🏠",
     address: "511 West Meade Blvd, Franklin, TN 37064",
     email: "krandell@hfhwm.org",
     phone: "615-690-8090",
@@ -50,7 +55,8 @@ const communities = [
     image: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&q=80&w=800"
   },
   {
-    name: "🏠Franklin Housing Authority",
+    name: "Franklin Housing Authority",
+    emoji: "🏠",
     address: "200 Spring Street, Franklin, TN 37064",
     email: null,
     phone: "(615)-794-1247",
@@ -60,7 +66,8 @@ const communities = [
     image: "https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&q=80&w=800"
   },
   {
-    name: "🏠Housing Development in City of Franklin, TN",
+    name: "Housing Development in City of Franklin, TN",
+    emoji: "🏠",
     address: "109 3rd Avenue South, Franklin, TN 37064",
     email: null,
     phone: "615-791-3217",
@@ -70,7 +77,8 @@ const communities = [
     image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800"
   },
   {
-    name: "⛪Franklin First United Methodist Church",
+    name: "Franklin First United Methodist Church",
+    emoji: "⛪",
     address: "120 Aldersgate Way, Franklin, TN 37069",
     email: "jtodd@franklinfumc.org",
     phone: "615-794-2734",
@@ -80,7 +88,8 @@ const communities = [
     image: "https://ccschouston.org/wp-content/uploads/2023/07/Family-service-day-3.jpg"
   },
   {
-    name: "⛪FrankTown Open Hearts",
+    name: "FrankTown Open Hearts",
+    emoji: "⛪",
     address: "320 Main Street, Suite 200, Franklin, TN 37064",
     email: "Chris@franktownopenhearts.com",
     phone: "615-807-0782",
@@ -90,7 +99,8 @@ const communities = [
     image: "https://bloximages.newyork1.vip.townnews.com/williamsonherald.com/content/tncms/assets/v3/editorial/9/62/9628647c-32c2-4a12-8bf8-fa3337f9bd7d/68f2af65b3260.image.jpg?resize=750%2C500"
   },
   {
-    name: "🐾Williamson County Animal Shelter",
+    name: "Williamson County Animal Shelter",
+    emoji: "🐾",
     address: "1006 Grigsby Hayes Court Franklin, TN 37064",
     email: "wcras@wilco.org",
     phone: "615-790-5590",
@@ -100,7 +110,8 @@ const communities = [
     image: "https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&q=80&w=800"
   },
   {
-    name: "🐾Williamson County Animal Hospital",
+    name: "Williamson County Animal Hospital",
+    emoji: "🐾",
     address: "1126 Murfreesboro Road, Franklin, TN 37064",
     email: "info@wcah.org",
     phone: "(615) 794-7113",
@@ -110,7 +121,8 @@ const communities = [
     image: "https://images.unsplash.com/photo-1576201836106-db1758fd1c97?auto=format&fit=crop&q=80&w=800"
   },
   {
-    name: "🐾Animal Care Center of Brentwood",
+    name: "Animal Care Center of Brentwood",
+    emoji: "🐾",
     address: "283 Wilson Pike Circle, Brentwood, TN 37027",
     email: "animalcarecenterofbrentwood@comcast.net",
     phone: "(615) 371-1242",
@@ -120,7 +132,8 @@ const communities = [
     image: "https://images.unsplash.com/photo-1599443015574-be5fe8a05783?auto=format&fit=crop&q=80&w=800"
   },
   {
-    name: "🌱Keep Williamson Beautiful",
+    name: "Keep Williamson Beautiful",
+    emoji: "🌱",
     address: "Franklin, TN",
     email: "belinda.brooks@williamsoncounty-tn.gov",
     phone: "615-786-0166",
@@ -130,7 +143,8 @@ const communities = [
     image: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&q=80&w=800"
   },
   {
-    name: "🌱Harpeth Conservancy",
+    name: "Harpeth Conservancy",
+    emoji: "🌱",
     address: "215 Jamestown Park Road, Suite 101, Brentwood, TN 37027",
     email: null,
     phone: "(615) 790-9767",
@@ -140,7 +154,8 @@ const communities = [
     image: "https://images.unsplash.com/photo-1470104240373-bc1812eddc9f?auto=format&fit=crop&q=80&w=800"
   },
   {
-    name: "🌱Cumberland River Compact",
+    name: "Cumberland River Compact",
+    emoji: "🌱",
     address: "1320 Adams St #1040, Nashville, TN 37208",
     email: "info@cumberlandrivercompact.org",
     phone: "(615) 837-1151",
@@ -150,7 +165,8 @@ const communities = [
     image: "https://images.unsplash.com/photo-1503197979108-c824168d51a8?auto=format&fit=crop&q=80&w=800"
   },
   {
-    name: "🌱Tennessee Environmental Council (TEC)",
+    name: "Tennessee Environmental Council (TEC)",
+    emoji: "🌱",
     address: "One Vantage Way, Suite E-250, Nashville, TN 37228",
     email: "tec@tectn.org",
     phone: "615-248-6500",
@@ -160,7 +176,8 @@ const communities = [
     image: "https://www.tectn.org/uploads/1/1/9/8/119801148/tec-glengarry-garden-photo_orig.jpg"
   },
   {
-    name: "🤝Volunteens TN / Volunteer Tennessee",
+    name: "Volunteens TN / Volunteer Tennessee",
+    emoji: "🤝",
     address: "312 Rosa L. Parks Ave, 18th Floor, Nashville, TN 37243",
     email: "volunteer.tennessee@tn.gov",
     phone: "(615) 253-1426",
@@ -170,7 +187,8 @@ const communities = [
     image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800"
   },
   {
-    name: "🤝Williamson County Library Volunteering",
+    name: "Williamson County Library Volunteering",
+    emoji: "🤝",
     address: "1314 Columbia Ave, Franklin, TN 37064",
     email: "deborah.reschke@williamsoncounty-tn.gov",
     phone: "615-786-0142",
@@ -180,7 +198,8 @@ const communities = [
     image: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&q=80&w=800"
   },
   {
-    name: "🤝The John P. Holt Brentwood Library Volunteering",
+    name: "The John P. Holt Brentwood Library Volunteering",
+    emoji: "🤝",
     address: "8109 Concord Rd, Brentwood, TN 37027",
     email: "VolunteerCoordinator@brentwoodtn.gov",
     phone: "(615) 371-0090",
@@ -190,7 +209,8 @@ const communities = [
     image: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80&w=800"
   },
   {
-    name: "🌍Hands On Nashville / United Way",
+    name: "Hands On Nashville / United Way",
+    emoji: "🌍",
     address: "250 Venture Circle, Nashville, TN 37228",
     email: "hon@unitedwaygn.org",
     phone: "(615) 298-1108",
@@ -200,7 +220,8 @@ const communities = [
     image: "https://mindtrip.ai/cdn-cgi/image/format=webp,w=1200/https://images.mindtrip.ai/attractions/25c1/193c/ec03/0603/fcf3/bc69/d879/e3d1"
   },
   {
-    name: "🌍American Red Cross",
+    name: "American Red Cross",
+    emoji: "🌍",
     address: "129 W Fowlkes St # 100, Franklin, TN 37064",
     email: "hospitalsupport@redcross.org",
     phone: "800-733-2767",
@@ -210,7 +231,8 @@ const communities = [
     image: "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&q=80&w=800"
   },
   {
-    name: "🌍We Care Williamson County",
+    name: "We Care Williamson County",
+    emoji: "🌍",
     address: "104 Southeast Pkwy, Suite 101, Franklin, TN 37064",
     email: "info@wecarewilliamsoncounty.org",
     phone: "(615) 208-5068",
@@ -220,7 +242,8 @@ const communities = [
     image: "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&q=80&w=800"
   },
   {
-    name: "🩺The Refuge Center for Counseling",
+    name: "The Refuge Center for Counseling",
+    emoji: "🩺",
     address: "4317 Long Lane, Franklin, TN 37064",
     email: "info@therefugecenter.org",
     phone: "(615) 591-5262",
@@ -230,7 +253,8 @@ const communities = [
     image: "https://refugecenter.org/wp-content/uploads/2025/01/IMG_4016-2.jpg"
   },
   {
-    name: "🩺Mercy Community Healthcare",
+    name: "Mercy Community Healthcare",
+    emoji: "🩺",
     address: "1113 Murfreesboro Rd, Franklin, TN 37064",
     email: "info@mercytn.org",
     phone: "(615) 790-0567",
@@ -240,7 +264,8 @@ const communities = [
     image: "https://media.istockphoto.com/id/1468520185/photo/teamwork-planning-and-meeting-with-doctors-and-laptop-for-medical-review-and-healthcare.jpg?s=612x612&w=0&k=20&c=mzMOVtbPz2H-T6T4F4htxsq9YFdiKfllmQOYZnyR9GE="
   },
   {
-    name: "🩺Williamson County Mental Health",
+    name: "Williamson County Mental Health",
+    emoji: "🩺",
     address: "407 N. Monroe St., Suite 220, Marion, IL 62959",
     email: "708board@williamsoncountyil.gov",
     phone: "988",
@@ -250,7 +275,8 @@ const communities = [
     image: "https://media.istockphoto.com/id/871778784/photo/adorable-baby-boy-claps-during-medical-exam.jpg?s=612x612&w=0&k=20&c=BHWS0ghGxGLsgrfL303jS-bjkAKVqhNF3IbHtNLtUUE="
   },
   {
-    name: "🩺Find Hope Franklin",
+    name: "Find Hope Franklin",
+    emoji: "🩺",
     address: "1001 N James M Campbell Blvd, Columbia, TN 38401",
     email: "info@therefugecenter.org",
     phone: "(877) 342-1450",
@@ -260,7 +286,8 @@ const communities = [
     image: "https://www.careerstaff.com/wp-content/uploads/2024/05/best-healthcare-jobs-mental-health-field-1200x722.png"
   },
   {
-    name: "🩺NAMI - Williamson & Maury Counties",
+    name: "NAMI - Williamson & Maury Counties",
+    emoji: "🩺",
     address: "PO Box 680273, Franklin, TN 37068",
     email: "namiwilliamsontn@gmail.com",
     phone: "615-567-3793",
@@ -270,7 +297,8 @@ const communities = [
     image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=800"
   },
   {
-    name: "🚑Williamson County Sheriff",
+    name: "Williamson County Sheriff",
+    emoji: "🚑",
     address: "408 Century Ct, Franklin, TN 37064",
     email: "info@williamsoncountysheriffTN.com",
     phone: "(615) 790-5560",
@@ -280,7 +308,8 @@ const communities = [
     image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800"
   },
   {
-    name: "🚑Office of Public Safety",
+    name: "Office of Public Safety",
+    emoji: "🚑",
     address: "304 Beasley Drive, Franklin, TN 37064",
     email: null,
     phone: "(615) 790-5757",
@@ -290,7 +319,8 @@ const communities = [
     image: "https://proambri.com/wp-content/uploads/2024/05/Ambulance-On-Street.jpg"
   },
   {
-    name: "📚Mary Lee Bunch Associates",
+    name: "Mary Lee Bunch Associates",
+    emoji: "📚",
     address: "7113 Peach Ct, Suite 111, Brentwood, TN 37027",
     email: "info@maryleebunch.com",
     phone: "(615) 377-6370",
@@ -300,7 +330,8 @@ const communities = [
     image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800"
   },
   {
-    name: "📚Williamson County Public Library Tutoring",
+    name: "Williamson County Public Library Tutoring",
+    emoji: "📚",
     address: "1314 Columbia Ave, Franklin, TN 37064",
     email: "library.friends@williamsoncounty-tn.gov",
     phone: "(615) 595-1243",
@@ -310,7 +341,8 @@ const communities = [
     image: "https://westportlibrary.org/wp-content/uploads/2023/10/Near-Peer-Tutoring.png"
   },
   {
-    name: "📚Huntington Learning Center",
+    name: "Huntington Learning Center",
+    emoji: "📚",
     address: "95 Seaboard Lane, Suite 106, Brentwood, TN 37027",
     email: null,
     phone: "(615) 376-8000",

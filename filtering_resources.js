@@ -17,7 +17,7 @@ function displayCommunities(dataToDisplay) {
         card.className = 'community-card';
         card.innerHTML = `
             <img src="${item.image}" alt="${item.name}" class="card-image">
-            <h3>${item.name}</h3>
+            <h3>${item.emoji}${item.name}</h3>
             <p><b>🏷️Category: </b> ${item.category}</p>
             <p><b>📍Address: </b> ${item.address}</p>
             <p><b>📞Phone: </b> ${item.phone}</p>
