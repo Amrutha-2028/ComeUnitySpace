@@ -16,13 +16,14 @@ function displayCommunities(dataToDisplay) {
         const card = document.createElement('div');
         card.className = 'community-card';
         card.innerHTML = `
+            <img src="${item.image}" alt="${item.name}" class="card-image">
             <h3>${item.name}</h3>
             <p><b>🏷️Category: </b> ${item.category}</p>
             <p><b>📍Address: </b> ${item.address}</p>
             <p><b>📞Phone: </b> ${item.phone}</p>
             ${item.email ? `<p><b>✉️Email: </b> ${item.email}</p>` : ''}
             <p><b>⭐Rating: </b> ${item.rating} (For demonstration only) </p>
-            <p><b>🌐Website: </b> <a href="${item.website}" target="_blank">Visit Site</a></p>
+            <p><b>🌐Website: </b> <a href="${item.website}" target="_blank">Visit their site</a></p>
         `;
         listContainer.appendChild(card);
     });
