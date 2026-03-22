@@ -1,160 +1,26 @@
- .burger-menu{
-  background-color:  #cae1ff;
-  font-family: "Alice", serif;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  top: 0;
- 
-}
-.nav-title{
-  margin-left: 23px;
-  margin-top: 25px;
-  flex-wrap: wrap;
-  margin-right: 20px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  font-size: 40px;
-  font-weight: bold;
-  pointer-events: none;
-  color: rgb(0, 71, 171);
-  background-color:  #cae1ff;
-
+.burger-menu {
+    margin: 0; /* Remove extra margin */
+    position: sticky; /* Make it sticky */
+    bottom: 0; /* Make it reach the bottom */
+    border: none; /* Remove black borders */
 }
 
-.menu {
-  box-sizing: border-box;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding-bottom: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background: #cae1ff;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 600px;
-  border-radius: 0px 0px 20px 0px;
-  border-right: solid  3px black;
-  border-bottom: solid  3px black;
-  width: 350px;
-  z-index: 1014;
-  justify-content: flex-end;
-  transition: transform 0.5s ease;
-  transform: translateX(-400px)
+button {
+    border: none; /* Remove borders around buttons */
+    text-align: left; /* Left-align buttons */
 }
 
-
-.item {
-  width: fit-content;
-  font-size: 14px;
-  background-color:  #cae1ff;
+.comeUnitySpace-title {
+    margin-top: 0; /* Remove top margin on title */
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0px;
-  background-color:  #cae1ff;
- 
-  
+.container {
+    width: 280px; /* Decrease width from 350px to 280px */
 }
 
-ul li a {
-  text-decoration: none;
-  background-color:  #cae1ff;
-  color: rgb(0, 71, 171);
-  padding: 10px 20px;
-  border: solid black;
-  display: flex;
-  border-width: 1px;
-  border-radius: 150px;
-  width: fit-content;
-  border-spacing: 10px;
-  margin-bottom: 10px;
-  transition: 0.2s ease-out;
-  justify-content: center;
-  align-items: center;
- 
-
-}
-
-ul li a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-  padding: 10px 25px;
- 
-}
-
-.button {
--webkit-appearance: none;
-display: none;
-visibility: hidden;
-
-}
-
-.burger {
-  position: absolute;
-  margin-left: 4px;
-  top: 0;
-  height: 40px;
-  width: 40px;
-  z-index: 1015;
-  cursor: pointer;
-  margin-top: 10px;
-  transition: opacity 0.3s;
-}
-
-.burger .b {
-  position: absolute;
-  height: 5px;
-  width: 28px;
-  background-color: rgb(0, 71, 171);
-  border-radius: 150px;
-  transition: 0.3s;
-}
-
-.burger .line1 {
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-
-}
-
-.burger .line2 {
-  left: 50%;
-  transform: translate(-50%,-50%);
-  top: 50%;
-
-}
-
-.burger .line3 {
-   left: 50%;
-  transform: translate(-50%,-50%);
-  top: 70%;
-}
-
-.burger:hover {
-  opacity: 0.7;
-}
-
-#menu-toggle:checked ~ label .line1 {
-  left:2px;
-  top: 14px;
-  width: 25px;
-  transform: rotate(45deg);
-}
-#menu-toggle:checked ~ label .line3 {
- left:2px;
- top: 14px;
- width:25px;
- transform: rotate(-45deg);
-}
-#menu-toggle:checked ~ label .line2 {
-  opacity: 0;
-}
-.button:checked ~ .menu {
-  transform: translateX(0)
+.homepage {
+    background-color: #A0D3E8; /* Change background color for homepage to a different shade of light blue */
+    position: absolute; /* Maintain at top left */
+    top: 0;
+    left: 0;
 }
