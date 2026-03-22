@@ -10,7 +10,7 @@ body {
 }
 
 p{color: #004aad;}
-h4{color: white;}
+h4{color: black;}
 h2 {
 
     font-family: "Alice", serif;
@@ -135,6 +135,7 @@ main ul li a:hover {
     font-size: 1.25rem;
     line-height: 1.6;
     font-weight: 300;
+    color: white;
 }
 
 .main-content {
