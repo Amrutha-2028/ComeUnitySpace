@@ -74,29 +74,27 @@ main ul li {
     text-align: left;
 }
 
-ul li a{
+/* scoped to main only so it doesn't override the burger menu links */
+main ul li a {
     text-decoration: none;
-    background:cae1ff;
+    background: #cae1ff;
     color: rgb(0,71,171);
     padding: 10px 20px;
-    border:solid black;
-    display:flex;
-    border-width:1px;
-    border-radius:150px;
-    width:fit-content;
-    margin-bottom:10px;
-    border-spacing:10px;
+    border: solid black;
+    display: flex;
+    border-width: 1px;
+    border-radius: 150px;
+    width: fit-content;
+    margin-bottom: 10px;
+    border-spacing: 10px;
     transition: 0.2s ease-out;
     justify-content: center;
     align-items: center;
- 
-
 }
 
-ul li a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-  padding: 10px 25px;
- 
+main ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 25px;
 }
 
 /* -----------hero----------- */
