@@ -1,83 +1,86 @@
 .burger-menu {
-  background-color: #cae1ff;
   font-family: "Alice", serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  top: 0;
 }
 
 .nav-title {
-  margin-left: 23px;
-  margin-top: 0px; /* removed top margin so there's no gap above the title */
-  flex-wrap: wrap;
-  margin-right: 20px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  font-size: 40px;
+  margin: 0;
+  padding: 30px 25px 20px 25px;
+  font-size: 22px; /* brought down from 40px so it doesn't dominate */
   font-weight: bold;
   pointer-events: none;
-  color: rgb(0, 71, 171);
-  background-color: #cae1ff;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25); /* soft divider line under the title */
+  background: transparent;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .menu {
   box-sizing: border-box;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding-bottom: 100px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* changed from center so buttons line up on the left */
-  justify-content: flex-end;
-  text-align: left; /* changed from center to left */
-  background: #cae1ff;
-  position: fixed; /* changed from absolute so menu stays visible when scrolling */
+  align-items: flex-start; /* buttons left-aligned */
+  justify-content: flex-start; /* changed from flex-end so title sits at the top */
+  text-align: left;
+  background: linear-gradient(160deg, #004aad 0%, #0062d6 60%, #1a7fe8 100%); /* deep blue gradient */
+  position: fixed; /* stays visible while scrolling */
   top: 0;
   left: 0;
-  height: 100vh; /* changed from 600px so it reaches the bottom of the screen */
-  border-radius: 0px 0px 20px 0px;
-  /* border-right and border-bottom removed */
-  width: 280px; /* decreased from 350px */
+  height: 100vh; /* reaches the bottom */
+  width: 270px; /* narrower than original 350px */
   z-index: 1014;
-  transition: transform 0.5s ease;
-  transform: translateX(-400px);
+  box-shadow: 4px 0px 20px rgba(0, 0, 0, 0.25); /* shadow on the right edge for depth */
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); /* smoother slide animation */
+  transform: translateX(-320px);
+  /* no border */
+}
+
+.items {
+  width: 100%;
+  padding: 10px 0px;
 }
 
 .item {
-  width: fit-content;
+  width: 100%;
   font-size: 14px;
-  background-color: #cae1ff;
+  background: transparent;
 }
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0px;
-  padding-left: 20px; /* added so buttons aren't right on the edge */
-  background-color: #cae1ff;
+  background: transparent;
   width: 100%;
 }
 
 ul li a {
   text-decoration: none;
-  background-color: #cae1ff;
-  color: rgb(0, 71, 171);
-  padding: 10px 20px;
-  border: none; /* border removed */
+  background: transparent;
+  color: #ffffff;
+  padding: 13px 25px;
+  border: none; /* no border around buttons */
   display: flex;
-  border-radius: 150px;
-  width: fit-content;
-  border-spacing: 10px;
-  margin-bottom: 10px;
-  transition: 0.2s ease-out;
-  justify-content: flex-start; /* changed from center so text aligns left */
+  border-radius: 0px; /* removed pill shape for a cleaner sidebar look */
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 2px; /* tight spacing between links */
+  transition: 0.2s ease;
+  justify-content: flex-start;
   align-items: center;
+  font-size: 15px;
+  border-left: 3px solid transparent; /* invisible left accent bar, shows on hover */
+  letter-spacing: 0.3px;
 }
 
 ul li a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-  padding: 10px 25px;
+  background-color: rgba(255, 255, 255, 0.15); /* subtle white highlight */
+  padding: 13px 25px;
+  border-left: 3px solid #ffffff; /* white accent bar appears on the left on hover */
 }
 
 .button {
@@ -87,7 +90,7 @@ ul li a:hover {
 }
 
 .burger {
-  position: fixed; /* changed from absolute so it stays at top left when scrolling */
+  position: fixed; /* stays at top left while scrolling */
   margin-left: 4px;
   top: 0;
   left: 0;
@@ -101,8 +104,8 @@ ul li a:hover {
 
 .burger .b {
   position: absolute;
-  height: 5px;
-  width: 28px;
+  height: 4px; /* slightly slimmer lines */
+  width: 26px;
   background-color: rgb(0, 71, 171);
   border-radius: 150px;
   transition: 0.3s;
@@ -135,6 +138,7 @@ ul li a:hover {
   top: 14px;
   width: 25px;
   transform: rotate(45deg);
+  background-color: #ffffff; /* X turns white when menu is open */
 }
 
 #menu-toggle:checked ~ label .line3 {
@@ -142,6 +146,7 @@ ul li a:hover {
   top: 14px;
   width: 25px;
   transform: rotate(-45deg);
+  background-color: #ffffff; /* X turns white when menu is open */
 }
 
 #menu-toggle:checked ~ label .line2 {
@@ -151,30 +156,6 @@ ul li a:hover {
 .button:checked ~ .menu {
   transform: translateX(0);
 }
-
-/* overrides color to match the homepages */
-body.homepage .menu {
-  background: #ffffff;
-}
-
-body.homepage .nav-title {
-  background-color: #ffffff;
-  color: #003399;
-}
-
-body.homepage ul {
-  background-color: #ffffff;
-}
-
-body.homepage ul li a {
-  background-color: #ffffff;
-  color: #003399;
-}
-
-body.homepage .item {
-  background-color: #ffffff;
-}
-
 body.homepage .burger .b {
-  background-color: #003399;
+  background-color: rgb(0, 71, 171); /* making burger lines stay darker */
 }
