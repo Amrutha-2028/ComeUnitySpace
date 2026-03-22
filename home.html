@@ -78,8 +78,7 @@
             Our mission is to bring programs, opportunities, and services together in one place so every
             person can <strong>find help, give help, and feel a sense of belonging.</strong>
             We work to strengthen local connections, reduce barriers to access, and make sure that
-            every member of our community — regardless of background or circumstance — has a clear
-            path to the support they need.
+            every member of our community has a clear and equal path to the support they need.
         </p>
         <div class="mission-points">
             <div class="point">🤝 <strong>Build</strong> meaningful connections</div>
@@ -95,14 +94,14 @@
                 <h1>Why We Started ComeUnitySpace</h1>
                 <p>
                     The idea for ComeUnitySpace was born out of a simple observation: our local community
-                    had an incredible number of organizations, programs, and services — but no single place
+                    had an outstanding number of organizations, programs, and services — but no single place
                     where people could find them all together.
                 </p>
                 <p style="margin-top:14px;">
                     Families in need were spending hours searching online, calling wrong numbers, or simply
                     not knowing that help was available just a few miles away. Volunteers didn't know where
                     their time would matter most. Local nonprofits struggled to get visibility. We wanted
-                    to change that — to make sure no one has to feel lost when they need support.
+                    to change that. We wanted to make sure no one has to feel lost when they need support.
                 </p>
             </div>
             <div class="about-button">
@@ -112,7 +111,7 @@
     </section>
     <hr class="hr">
     <section class="spotlight">
-        <h1>Lets shine a spotlight on these wonderful services!</h1>
+        <h1>Let's shine a spotlight on these wonderful services!</h1>
         <div class="directory-button">
             <a href="resources.html" class="directory-btn">Visit our ComeUnity Directory!</a>
         </div>
@@ -245,17 +244,19 @@
     <hr class="hr">
 
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-        //Spotlight 
-        const track = document.querySelector('.spotlight-track');
-        const leftBtn = document.querySelector('.left-btn');
-        const rightBtn = document.querySelector('.right-btn');
+        //Spotlight
+        window.addEventListener('load', () => {
+            const track = document.querySelector('.spotlight-track');
+            const leftBtn = document.querySelector('.left-btn');
+            const rightBtn = document.querySelector('.right-btn');
 
-        rightBtn.addEventListener('click', () => {
-            track.scrollBy({ left: 300, behavior: 'smooth' });
-        });
+            rightBtn.addEventListener('click', () => {
+                track.scrollBy({ left: 300, behavior: 'smooth' });
+            });
 
-        leftBtn.addEventListener('click', () => {
-            track.scrollBy({ left: -300, behavior: 'smooth' });
+            leftBtn.addEventListener('click', () => {
+                track.scrollBy({ left: -300, behavior: 'smooth' });
+            });
         });
 
         //Statistics
@@ -283,3 +284,5 @@
                 updateCount();
             });
         }
+
+        // Start
