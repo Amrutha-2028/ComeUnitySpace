@@ -124,6 +124,7 @@ a {
 .about-text p {
     line-height: 1.5;
     opacity: 0.9;
+    text-align: left; /* keeps paragraph text left-aligned inside the about section */
 }
 
 .about-button {
