@@ -81,7 +81,7 @@ p {
     border: none;
     height: 3px;
     background: #d0d0dd;
-    margin: 30px auto; /* reduced from 55px */
+    margin: 55px auto;
     width: 90%;
     border-radius: 10px;
 }
