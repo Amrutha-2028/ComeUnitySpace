@@ -23,7 +23,7 @@ a {
     border: none;
     height: 4px;
     background: #d0d0dd;
-    margin: 30px auto; /* reduced from 60px */
+    margin: 60px auto;
     width: 90%;
     border-radius: 10px;
 }
