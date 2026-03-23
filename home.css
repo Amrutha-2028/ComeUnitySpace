@@ -355,6 +355,11 @@ a {
     color: white;
 }
 
+.statistics h4 {
+    margin-bottom: 40px; /* adds space between the disclaimer and the number boxes */
+    color: white;
+}
+
 .statistics-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
