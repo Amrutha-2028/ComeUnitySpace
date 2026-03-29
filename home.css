@@ -28,7 +28,6 @@ a {
     border-radius: 10px;
 }
 
-/* Main Banner Section CSS*/
 .hero {
     text-align: center;
     padding: 120px 20px;
@@ -102,7 +101,7 @@ a {
     text-align: center;
 }
 
-/* About Us Section CSS*/
+/* About Us*/
 .about-container {
     display: flex;
     align-items: center;
@@ -124,6 +123,7 @@ a {
 .about-text p {
     line-height: 1.5;
     opacity: 0.9;
+    text-align: left; /*makes all the text on AboutUs stay aligned to the left */
 }
 
 .about-button {
@@ -155,7 +155,7 @@ a {
 }
 
 
-/* Mission Section CSS*/
+/* Mission Section*/
 .mission h1 {
     font-size: 2.5rem;
     margin-bottom: 40px;
@@ -183,14 +183,14 @@ a {
     transition: 0.5s ease;
 }
 
-/* Spotlight Section CSS */
+
 .spotlight h1 {
     font-size: 2.5rem;
     margin-bottom: 40px;
 
 }
 
-/* Container that holds arrows + track */
+
 .spotlight-container {
     position: relative;
     max-width: 900px;
@@ -319,30 +319,30 @@ a {
     background: #97b1d3;
 }
 
-/* Statistics Section CSS*/
+/* Statistics Section*/
 .statistics {
     text-align: center;
     background: url("community-impact.avif") no-repeat center center; 
-    background-size: cover; /* Changed to cover for better fit */
+    background-size: cover;
     padding-top: 30px;
     padding-bottom: 60px;
-    color: white; /* Make text white to see it over the dark overlay */
-    position: relative; /* <--- THIS IS THE KEY */
+    color: white;
+    position: relative; 
     overflow: hidden;
 }
 
 .statistics::before {
     content: "";
-    position: absolute; /* Clings to .statistics because it's relative */
+    position: absolute; 
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.65); /* Dark overlay */
+    background: rgba(0, 0, 0, 0.65);
     z-index: 1;
 }
 
-/* Ensure all content inside statistics stays above the overlay */
+/* Layer the content */
 .statistics * {
     position: relative;
     z-index: 2;
@@ -350,6 +350,11 @@ a {
 
 .statistics h1 {
     font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.statistics h4 {
     margin-bottom: 40px;
     color: white;
 }
@@ -386,4 +391,85 @@ a {
 
 .footer p {
     text-align: left;
+}
+
+/* Values Section */
+.values-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.values-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #004aad;
+}
+
+.values-grid-home {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.value-card-home {
+    background: white;
+    border-radius: 14px;
+    padding: 30px 25px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+    border-top: 4px solid #004aad;
+    transition: transform 0.2s ease;
+    flex: 1;
+    min-width: 200px;
+    max-width: 240px;
+}
+
+.value-card-home:hover {
+    transform: translateY(-6px);
+}
+
+.value-emoji-home {
+    font-size: 2.2rem;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.value-card-home h3 {
+    color: #004aad;
+    font-size: 1.05rem;
+    margin-bottom: 10px;
+    font-family: "Alice", serif;
+}
+
+.value-card-home p {
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    text-align: center;
+    font-family: "Alice", serif;
+}
+
+/* Who Do We Serve */
+.serve-section-home {
+    text-align: center;
+    padding: 20px 40px;
+    background: white;
+}
+
+.serve-section-home h1 {
+    color: #004aad;
+    margin-bottom: 20px;
+}
+
+.serve-section-home p {
+    max-width: 800px;
+    margin: 0 auto 14px auto;
+    font-family: "Alice", serif;
+    font-size: 1.05rem;
+    color: #444;
+    line-height: 1.7;
+    text-align: center;
 }

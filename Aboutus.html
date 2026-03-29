@@ -9,14 +9,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alice&family=Happy+Monkey&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
   <title>ComeUnitySpace — Who We Are</title>
   <link rel="stylesheet" href="Aboutus.css">
-  </link>
 </head>
 
 <body>
+
+  <!-- burger menu -->
   <div class="burger-menu">
     <input class="button" type="checkbox" id="menu-toggle">
     <label for="menu-toggle">
@@ -26,7 +25,6 @@
         <div class="line3 b"></div>
       </div>
     </label>
-
     <div class="menu">
       <h1 class="nav-title">ComeUnitySpace</h1>
       <div class="items">
@@ -36,88 +34,304 @@
           <li class="item"><a href="submitResourceForm.html">Submit a Resource</a></li>
           <li class="item"><a href="calendar.html">Upcoming Events</a></li>
           <li class="item"><a href="Aboutus.html">About Us</a></li>
+          <li class="item"><a href="volunteer.html">Volunteer</a></li>
           <li class="item"><a href="references.html">Reference Page</a></li>
         </ul>
       </div>
-
     </div>
   </div>
+
+  <!-- hero banner -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-text">About ComeUnitySpace</h1>
+      <h4 class="hero-subtext">
+        ComeUnitySpace was created to foster an environment where community members can connect,
+        <strong>support each other</strong>, and <strong>access the resources</strong> they need to thrive.
+        This hub strengthens neighborhood ties through trusted information and coordinated support.
+      </h4>
+    </div>
+  </section>
 
   <main>
-    <section class="hero">
-  <div class="hero-content">
-    <h1 class="hero-text">About ComeUnitySpace</h1>
-    <h4 class="hero-subtext">
-      ComeUnity was created to foster an environment where community members can connect, 
-      <strong>support each other</strong>, and <strong>access the resources</strong> they need to thrive. 
-      This hub strengthens neighborhood ties through trusted information and coordinated support.
-    </h4>
-  </div>
-</section>
 
-<section class="main-content">
-  <div class="container">
-    <h2>The Functionality of the Resource Directory</h2>
-    <p>
-      The directory collects and highlights resources across several categories so residents can
-      quickly find help in areas including, but not limited to:
-    </p>
-    
-    <div class="info-grid">
-      <div class="info-card">
-        <h3>Primary Categories</h3>
-        <ul>
-          <li>Food Assistance</li>
-          <li>Housing Support</li>
-          <li>Religious Community Assistance</li>
-          <li>Animal Welfare</li>
-        </ul>
-      </div>
+    <!-- how we built it -->
+    <div class="section">
+      <h2 class="section-title">How We Developed ComeUnitySpace</h2>
+      <p class="section-subtitle">Building this hub took research, collaboration, and a lot of care.</p>
 
-      <div class="info-card">
-        <h3>Our Partners</h3>
-        <ul>
-          <li>Nonprofit Organizations</li>
-          <li>Religious Institutions</li>
-          <li>Community Groups</li>
-          <li>Local Government Agencies</li>
-        </ul>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot">🔍</div>
+          <div class="timeline-content">
+            <h3>Research and Planning</h3>
+            <p>
+              We began by identifying the biggest gaps in our local community's access to information.
+              After speaking with residents and reviewing existing resources, we narrowed our focus to
+              key categories: Food Assistance, Animal Welfare, Youth Volunteering, Non-Profit Organizations,
+              and Healthcare. From there, we researched dozens of local organizations, verified their
+              contact information, and assessed how they could best serve community members.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot">💻</div>
+          <div class="timeline-content">
+            <h3>Design and Coding</h3>
+            <p>
+              With our research in hand, we moved into building the website itself. We focused on making
+              the design clean, welcoming, and easy to navigate — especially for people who might be
+              stressed or in a hurry when looking for help. Every page was designed with accessibility
+              and clarity in mind, using consistent colors, fonts, and layouts throughout the site.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot">🧪</div>
+          <div class="timeline-content">
+            <h3>Testing and Feedback</h3>
+            <p>
+              Before launching, we walked real users through the site and collected their feedback.
+              We made adjustments to the navigation, updated resource information, and refined the
+              overall experience based on what we heard. Testing helped us catch things we'd missed
+              and made the final product much stronger.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot">🚀</div>
+          <div class="timeline-content">
+            <h3>Launch and Growth</h3>
+            <p>
+              ComeUnitySpace launched with the goal of growing alongside the community it serves.
+              We continue to add new resources, update existing listings, and expand into new
+              categories based on what our community needs most. If you know of a resource that
+              should be listed, you can submit it directly through our Submit a Resource page.
+            </p>
+          </div>
+        </div>
+
       </div>
     </div>
-  </div>
-  </section>
-    <section class="mission-heading">
-      <h2 id="mission-heading">Mission Statement</h2>
-      <p>
-        Our mission is to bring programs, opportunities, and services together in one place so every person can
-        <strong>find
-          help, give help, and feel a sense of belonging.</strong>We also work to strengthen local connections and
-        reduce barriers to
-        access.
-      </p>
 
-      <h2>Who do we serve?</h2>
-      <p>
-        We serve individuals, families, volunteers, and local organizations — anyone, including <i> you</i>, could join to contribute to or
-        benefit from a stronger, more connected community.
-      </p>
-    </section>
+    <hr class="hr">
+
+    <!-- photo stories - images paired with meaningful context -->
+    <div class="section">
+      <h2 class="section-title">The Work Behind ComeUnitySpace</h2>
+      <p class="section-subtitle">Every category in our directory represents real people doing real work in our community.</p>
+      <div class="photo-stories">
+
+        <div class="photo-story">
+          <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=800" alt="Food drive volunteers">
+          <div class="photo-story-text">
+            <h3>🍽️ Fighting Food Insecurity</h3>
+            <p>Organizations like GraceWorks Ministries and One Gen Away serve thousands of families across Williamson County every year. ComeUnitySpace makes it easy to find them, donate to them, or volunteer with them.</p>
+          </div>
+        </div>
+
+        <div class="photo-story reverse">
+          <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800" alt="Youth volunteers">
+          <div class="photo-story-text">
+            <h3>🤝 Empowering Young Volunteers</h3>
+            <p>From library programs to county-wide initiatives, there are dozens of ways for teens and young adults to give back. ComeUnitySpace's volunteer page brings all those opportunities — and a way to track your hours — into one place.</p>
+          </div>
+        </div>
+
+        <div class="photo-story">
+          <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&q=80&w=800" alt="Community cleanup">
+          <div class="photo-story-text">
+            <h3>🌱 Caring for Our Environment</h3>
+            <p>Groups like Keep Williamson Beautiful and the Harpeth Conservancy work tirelessly to protect the natural spaces we share. ComeUnitySpace helps connect residents with these efforts so everyone can play a part.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <hr class="hr">
+
+    <!-- what we cover -->
+    <div class="section">
+      <h2 class="section-title">What We Cover</h2>
+      <p class="section-subtitle">Our resource directory spans a wide range of categories to serve as many people as possible.</p>
+      <div class="info-grid">
+        <div class="info-card">
+          <h3>Primary Categories</h3>
+          <ul>
+            <li>Food Assistance</li>
+            <li>Housing & Community Development</li>
+            <li>Religious Community Assistance</li>
+            <li>Animal Welfare</li>
+            <li>Environmental & Community Clean-Up</li>
+            <li>Youth Volunteer Programs</li>
+            <li>Mental Health Services</li>
+            <li>Emergency Services</li>
+            <li>Education & Tutoring</li>
+          </ul>
+        </div>
+        <div class="info-card">
+          <h3>Our Partners</h3>
+          <ul>
+            <li>Nonprofit Organizations</li>
+            <li>Religious Institutions</li>
+            <li>Community Groups</li>
+            <li>Local Government Agencies</li>
+            <li>Animal Shelters & Clinics</li>
+            <li>Public Libraries</li>
+            <li>Healthcare Providers</li>
+            <li>Environmental Conservancies</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <hr class="hr">
+
+    <!-- what makes us different -->
+    <div class="section">
+      <h2 class="section-title">What Makes Us Different</h2>
+      <p class="section-subtitle">There are a lot of websites out there. Here's why ComeUnitySpace stands apart.</p>
+      <div class="different-grid">
+
+        <div class="different-item">
+          <span class="different-icon">📍</span>
+          <div>
+            <h3>Hyper-Local Focus</h3>
+            <p>Unlike broad national directories, every resource on ComeUnitySpace is specifically chosen for the Williamson County area. We know our community and we curate for it.</p>
+          </div>
+        </div>
+
+        <div class="different-item">
+          <span class="different-icon">🗂️</span>
+          <div>
+            <h3>Everything in One Place</h3>
+            <p>Food, housing, mental health, volunteering, animal welfare — instead of bouncing between a dozen different sites, you can find it all here in one organized hub.</p>
+          </div>
+        </div>
+
+        <div class="different-item">
+          <span class="different-icon">✅</span>
+          <div>
+            <h3>Verified Information</h3>
+            <p>Every listing was manually researched, with addresses, phone numbers, emails, and websites all checked before being added to the directory.</p>
+          </div>
+        </div>
+
+        <div class="different-item">
+          <span class="different-icon">🙋</span>
+          <div>
+            <h3>Community-Driven</h3>
+            <p>Anyone can suggest a new resource through our Submit a Resource page. ComeUnitySpace grows with the community — because you know your neighbors best.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <hr class="hr">
+
+    <!-- FAQ -->
+    <div class="section">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-subtitle">Have a question? We probably have the answer.</p>
+
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Is ComeUnitySpace free to use?
+            <span class="faq-arrow">▼</span>
+          </button>
+          <div class="faq-answer">
+            Yes, completely! ComeUnitySpace is free for everyone. There are no sign-ups, no fees, and no barriers. Just browse and find what you need.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            How do I submit a resource?
+            <span class="faq-arrow">▼</span>
+          </button>
+          <div class="faq-answer">
+            You can head to the Submit a Resource page from the navigation menu. Fill out the form with the organization's details and we'll review it for inclusion in the directory.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Who can use this site?
+            <span class="faq-arrow">▼</span>
+          </button>
+          <div class="faq-answer">
+            Anyone! Whether you're a resident looking for help, a volunteer searching for opportunities, a student needing community service hours, or an organization wanting visibility — ComeUnitySpace is for you.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            How often is the information updated?
+            <span class="faq-arrow">▼</span>
+          </button>
+          <div class="faq-answer">
+            We do our best to keep all listings current. If you notice any outdated information, you're always welcome to let us know through the Submit a Resource form so we can make corrections.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Can I volunteer through this site?
+            <span class="faq-arrow">▼</span>
+          </button>
+          <div class="faq-answer">
+            Yes! Check out our Volunteer page from the navigation menu. It lists local volunteer opportunities and even includes a volunteer hour tracker you can use to log your hours.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Are the resources only for Williamson County?
+            <span class="faq-arrow">▼</span>
+          </button>
+          <div class="faq-answer">
+            Most of our listings are focused on Williamson County and the surrounding Middle Tennessee area. However, some organizations like the American Red Cross and Volunteer Tennessee serve a broader region.
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <hr class="hr">
+
   </main>
-<footer>
-        <div class="footer-column vision-col">
-            <h3>Our Vision</h3>
-            <p>At ComeUnity Space, everyone belongs by sharing support, offering help, and finding help together in one
-                place.</p>
-        </div>
-        <div class="footer-column">
-            <p>© 2026 ComeUnity Space</p>
-        </div>
-        <div class="footer-column contact-col">
-            <p>Contact Us</p>
-            <p>Phone: (123)-456-7890</p>
-            <p>Email: help@comeunityspace.com</p>
-        </div>
-    </footer>
+
+  <!-- footer -->
+  <footer>
+    <div class="footer-column vision-col">
+      <h3>Our Vision</h3>
+      <p>At ComeUnity Space, everyone belongs by sharing support, offering help, and finding help together in one place.</p>
+    </div>
+    <div class="footer-column">
+      <p>© 2026 ComeUnity Space</p>
+    </div>
+    <div class="footer-column contact-col">
+      <p>Contact Us</p>
+      <p>Phone: (123)-456-7890</p>
+      <p>Email: help@comeunityspace.com</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleFaq(button) {
+      var item = button.parentElement;
+      item.classList.toggle("open");
+    }
+  </script>
+
 </body>
 
-</html>
+</html>  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js

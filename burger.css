@@ -1,104 +1,99 @@
- .burger-menu{
-  background-color:  #cae1ff;
+.burger-menu {
   font-family: "Alice", serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  top: 0;
- 
 }
-.nav-title{
-  margin-left: 23px;
-  margin-top: 25px;
-  flex-wrap: wrap;
-  margin-right: 20px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  font-size: 40px;
+
+.nav-title {
+  margin: 0;
+  padding: 30px 25px 20px 50px;
+  font-size: 22px; 
   font-weight: bold;
   pointer-events: none;
-  color: rgb(0, 71, 171);
-  background-color:  #cae1ff;
-
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25); 
+  background: transparent;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .menu {
   box-sizing: border-box;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding-bottom: 100px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background: #cae1ff;
-  position: absolute;
+  align-items: flex-start; /*left align the buttons */
+  justify-content: flex-start; 
+  text-align: left;
+  background: linear-gradient(160deg, #004aad 0%, #0062d6 60%, #1a7fe8 100%); 
+  position: fixed;
   top: 0;
   left: 0;
-  height: 600px;
-  border-radius: 0px 0px 20px 0px;
-  border-right: solid  3px black;
-  border-bottom: solid  3px black;
-  width: 350px;
+  height: 100vh; 
+  width: 270px; 
   z-index: 1014;
-  justify-content: flex-end;
-  transition: transform 0.5s ease;
-  transform: translateX(-400px)
+  box-shadow: 4px 0px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); 
+  transform: translateX(-320px);
+  
 }
 
+.items {
+  width: 100%;
+  padding: 10px 0px;
+}
 
 .item {
-  width: fit-content;
+  width: 100%;
   font-size: 14px;
-  background-color:  #cae1ff;
+  background: transparent;
 }
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0px;
-  background-color:  #cae1ff;
- 
-  
+  background: transparent;
+  width: 100%;
 }
 
 ul li a {
   text-decoration: none;
-  background-color:  #cae1ff;
-  color: rgb(0, 71, 171);
-  padding: 10px 20px;
-  border: solid black;
+  background: transparent;
+  color: #ffffff;
+  padding: 13px 25px;
+  border: none; 
   display: flex;
-  border-width: 1px;
-  border-radius: 150px;
-  width: fit-content;
-  border-spacing: 10px;
-  margin-bottom: 10px;
-  transition: 0.2s ease-out;
-  justify-content: center;
+  border-radius: 0px; 
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 2px; 
+  transition: 0.2s ease;
+  justify-content: flex-start;
   align-items: center;
- 
-
+  font-size: 15px;
+  border-left: 3px solid transparent; 
+  letter-spacing: 0.3px;
 }
 
 ul li a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-  padding: 10px 25px;
- 
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 13px 25px;
+  border-left: 3px solid #ffffff; 
 }
 
 .button {
--webkit-appearance: none;
-display: none;
-visibility: hidden;
-
+  -webkit-appearance: none;
+  display: none;
+  visibility: hidden;
 }
 
 .burger {
-  position: absolute;
+  position: fixed; 
   margin-left: 4px;
   top: 0;
+  left: 0;
   height: 40px;
   width: 40px;
   z-index: 1015;
@@ -109,8 +104,8 @@ visibility: hidden;
 
 .burger .b {
   position: absolute;
-  height: 5px;
-  width: 28px;
+  height: 4px; 
+  width: 26px;
   background-color: rgb(0, 71, 171);
   border-radius: 150px;
   transition: 0.3s;
@@ -119,20 +114,18 @@ visibility: hidden;
 .burger .line1 {
   top: 30%;
   left: 50%;
-  transform: translate(-50%,-50%);
-
+  transform: translate(-50%, -50%);
 }
 
 .burger .line2 {
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   top: 50%;
-
 }
 
 .burger .line3 {
-   left: 50%;
-  transform: translate(-50%,-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   top: 70%;
 }
 
@@ -141,20 +134,28 @@ visibility: hidden;
 }
 
 #menu-toggle:checked ~ label .line1 {
-  left:2px;
+  left: 2px;
   top: 14px;
   width: 25px;
   transform: rotate(45deg);
+  background-color: #ffffff; 
 }
+
 #menu-toggle:checked ~ label .line3 {
- left:2px;
- top: 14px;
- width:25px;
- transform: rotate(-45deg);
+  left: 2px;
+  top: 14px;
+  width: 25px;
+  transform: rotate(-45deg);
+  background-color: #ffffff; 
 }
+
 #menu-toggle:checked ~ label .line2 {
   opacity: 0;
 }
+
 .button:checked ~ .menu {
-  transform: translateX(0)
+  transform: translateX(0);
+}
+body.homepage .burger .b {
+  background-color: rgb(0, 71, 171);
 }
